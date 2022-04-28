@@ -101,11 +101,13 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
 </p>
 ### Simulation Using iverilog.
 - i.  RTL file and Test-bench files are passed with iverilog simulator.Intially  "a.out" file is outputed <br/>
+
 ```
 iverilog good_mux.v tb_good_mux.v
 
 ```
 - ii. Now to get the .vcd file <br/>
+
 ```
 ./a.out
 
@@ -114,11 +116,13 @@ iverilog good_mux.v tb_good_mux.v
     <img src="" />
 </p>
 - iii.To view the waveform for logical verification run the .vcd file with gtkwave <br/>
- ``` 
+
+``` 
  gtkwave tb_good_mux.vcd
  
  ```
-  <p align="center">
+
+<p align="center">
     <img src="" />
 </p>
 
