@@ -91,7 +91,8 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
     <img src="" />
 </p>
 - Now check the Verilog files which contains the RTL and Test-Bench files 
-   ```cd sky130RTLDesignAndSynthesisworkshop
+   ```
+      cd sky130RTLDesignAndSynthesisworkshop
       ls
       cd verilog_files
    ```
@@ -100,16 +101,16 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
 </p>
 ### Simulation Using iverilog.
 - i.  RTL file and Test-bench files are passed with iverilog simulator.Intially  "a.out" file is outputed
-```iverilog good_mux.v tb_good_mux.v
+``` iverilog good_mux.v tb_good_mux.v
 ```
 - ii. Now to get the .vcd file 
-```./a.out
+``` ./a.out
 ```
  <p align="center">
     <img src="" />
 </p>
 - iii.To view the waveform for logical verification run the .vcd file with gtkwave
- ```gtkwave tb_good_mux.vcd
+ ``` gtkwave tb_good_mux.vcd
  ```
   <p align="center">
     <img src="" />
