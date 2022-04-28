@@ -14,6 +14,9 @@ This is a Five-Day workshop is  on RTL Design using verilog with SKY130 Technolo
    
    
 
-# DAY1:Introduction To Verilog RTL Design and Synthesis.
-   
- 
+# DAY1 : Introduction To Verilog RTL Design and Synthesis.
+On Day1 <br/>
+
+##Part1 :Introduction to Open-source simulator iverilog
+>Introduction to iverilog design and testbench
+  
