@@ -20,10 +20,11 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
 # Part1 :Introduction to Open-source Simulator iverilog
 
 ## Introduction to iverilog,Design and testbench
+
 ### Simulation:
 - It is technique for applying different input stimulus to the design at different times to check if the RTL code behaves in an intended way.Usually using a Simulation Software(Simulator).In our case we are dealing with Digital design which is modelled using HDL (hardware description language) like VHDL,Verilog,System Verilog.And for high-level synthesis languages too such as C/C++,SystemC etc.
 ### Simulator:
-- A Simulator is a tool which is used for checking a funtionality of Design..<br />
+- A Simulator is a tool which is used for checking a funtionality of Design.The simulator used here is "iverilog". <br />
 - Icarus Verilog (iverilog) : It is a verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format.Icarus Verilog is an open source Verilog compiler that supports the IEEE-1364 Verilog HDL including IEEE1364-2005 plus.<br/>
 
 
@@ -39,25 +40,84 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
 - It is the Setup to apply stimulus(Test_Vectors) to Design to check it's Functionality.Here the Logical functionality is verified.
 
 ### How Simulator Works:
-- Simulator looks for the changes on Inputs Signals
+- Simulator continouly monitor for the changes on Inputs Signals
 - Upon changes to input the Output is evaluated
      If there is no change in input,no change in output.
+- Simulator dumps the change to the ouput to a file accoridng to the change in input.
 
-## Test-Bench:
-<p align="center">
-    <img src="" />
-</p>
-## iVerilog Designflow
-<p align="center">
-    <img src="" />
-</p>
 
 # Design iverilog and Testbench
-
-
+- The RTL design written in verilog code has some primary inputs and primary outputs. It may have one or more primary inputs and one or more corresponding primary       outputs.
+- We need to give stimulus to all the primary inputs and need to observe the primary outputs. Thus we need stimulus generator at the input and stimulus observer at the   output.
+- For giving stimulus we write the test bench, for that the design(module) is instantiated in the test bench, then stimulus is applied.
+- It is important to note that the test bench doesn't have any primary input and primary output.
+## iVerilog Designflow
+- The iverilog file takes two inputs:
+- RTL Design
+- Test-Bench
+- As Shown Below: 
+<p align="center">
+    <img src="" />
+</p>
+- The iverilog simulator dumps .vcd(value change dump) which can be viewed using gtkwave <br/>
+- Here is a Blockdiagram representation of test-bench:
+  <p align="center">
+    <img src="" />
+</p>
+ 
+### Iverilog Set-up and Simulation
+- open terminal and create a root directory to work-in
+- Here are the commands to Get started
+```mkdir vlsi
+   cd vlsi
+   mkdir vsdflow
+   git clone  https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+   ```
+- Now to Check the Content Enter
+   ```
+      cd vlsi
+      cd vsdflow
+      ls 
+      cd sky130RTLDesignAndSynthesisWorkshop
+      ls -ltr
+      cd my_lib
+      ls
+      cd lib   :This file contain the  Sky130 Standard Cell library
+      cd ..
+      cd verilog_model :Content of verilog models
+      
+   ```
+    <p align="center">
+    <img src="" />
+</p>
+- Now check the Verilog files which contains the RTL and Test-Bench files 
+   ```cd sky130RTLDesignAndSynthesisworkshop
+      ls
+      cd verilog_files
+   ```
+ <p align="center">
+    <img src="" />
+</p>
+### Simulation Using iverilog.
+- i.  RTL file and Test-bench files are passed with iverilog simulator.Intially  "a.out" file is outputed
+```iverilog good_mux.v tb_good_mux.v
+```
+- ii. Now to get the .vcd file 
+```./a.out
+```
+ <p align="center">
+    <img src="" />
+</p>
+- iii.To view the waveform for logical verification run the .vcd file with gtkwave
+ ```gtkwave tb_good_mux.vcd
+ ```
+  <p align="center">
+    <img src="" />
+</p>
 
 # Introduction to Yosys.
-yosys<br/>
+- Yosys:
+- This is a framework for RTL synthesis tools. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application   domains.Which converts a RTL design to Gate-level Netlist.<br/>
 ### .lib Function
 > Why Diffrent Versions of Cells?
 
