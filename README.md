@@ -17,7 +17,7 @@ This is a Five-Day workshop is  on RTL Design using verilog with SKY130 Technolo
 
 On the first day of the We preformed tool set-up.And analysed the basic flow of Simulator and Synthesiers.We also analysed the translated Gate-level netlist with Different Flavours of Standard cell types with  Constraints  of  mainly focusing  on Timing in Circuits  taking  Set-up and Hold-time into Consideration.And correlating the Performance of Cells with  wide width and narrow width to drive the Capacitors.And tried out Synthesis of a Good mux as well as Checked the Logical Funtionality in Iverilog and Gtkwave.<br/>
 
-# Part1 :Introduction to Open-source Simulator iverilog
+# Introduction to Open-source Simulator iverilog
 
 ## Introduction to iverilog,Design and testbench
 
