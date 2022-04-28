@@ -141,5 +141,18 @@ iverilog good_mux.v tb_good_mux.v
 <p align="center">
     <img src="" />
 </p>
-# Lab on Yosys
+## Lab on Yosys
+
+# Day2: Timming lib,Hierarchical vs Flat Synthesis and Efficient Flop Coding Styles 
+
+# Introduction to Timing.lib
+ ```
+ -Nomencleture of the library. 
+ 
+ ```
+# hierarchical vs flat
+
+# Hierarchical vs Flat Synthesis
+
+
 
