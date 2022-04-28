@@ -5,4 +5,4 @@ This is a Five-Day workshop is  on RTL Design using verilog with SKY130 Technolo
 
 
 ## **INDEX**
-- [RTL Design Synthesis using Sky130 Technology]()
+- [RTL Design Synthesis using Sky130 Technology](https://github.com/Jayanth-sharma/RTL-design-synthesis-using-sky130--vsd/main/README.md#RTL-Design with verilog using Sky130 Technology)
