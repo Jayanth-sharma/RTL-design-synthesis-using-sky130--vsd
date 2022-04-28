@@ -13,6 +13,7 @@ This is a Five-Day workshop is  on RTL Design using verilog with SKY130 Technolo
    
    
    
-   #DAY1:Introduction To Verilog RTL Design and Synthesis.
+
+# DAY1:Introduction To Verilog RTL Design and Synthesis.
    
  
