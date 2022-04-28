@@ -11,30 +11,38 @@ This is a Five-Day workshop is  on RTL Design using verilog with SKY130 Technolo
    
    
    
-   
-   
+
 
 # DAY1 : Introduction To Verilog RTL Design and Synthesis.
 
-On Day1 We preformed tool installation.And analysed the basic flow of Simulator and Synthesiers.We also analysed the translation Gate-level netlist with Different Flavours Standard cell types with Constraints of mainly focusing on Timing in Circuits taking Set-up and Hold-time into Consideration.And correlating the Performance of Cells with  wide width and narrow width to drive the Capacitors.And tried out Synthesis of a Good mux as well as Checked the Logical Funtionality in Iverilog.<br/>
+On the first day of the We preformed tool set-up.And analysed the basic flow of Simulator and Synthesiers.We also analysed the translated Gate-level netlist with Different Flavours of Standard cell types with  Constraints  of  mainly focusing  on Timing in Circuits  taking  Set-up and Hold-time into Consideration.And correlating the Performance of Cells with  wide width and narrow width to drive the Capacitors.And tried out Synthesis of a Good mux as well as Checked the Logical Funtionality in Iverilog and Gtkwave.<br/>
 
 # Part1 :Introduction to Open-source Simulator iverilog
 
 ## Introduction to iverilog,Design and testbench
+### Simulation:
+- It is technique for applying different input stimulus to the design at different times to check if the RTL code behaves in an intended way.Usually using a Simulation Software(Simulator).In our case we are dealing with Digital design which is modelled using HDL (hardware description language) like VHDL,Verilog,System Verilog.And for high-level synthesis languages too such as C/C++,SystemC etc.
 ### Simulator:
-- A Simulator is a tool which is used for checking a Design.RTL design is the implementation of a specs.RTL design is checked for adherence to the spec by the design.The   tool used for Simulating the design is a Simulator.<br />
+- A Simulator is a tool which is used for checking a funtionality of Design..<br />
+- Icarus Verilog (iverilog) : It is a verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format.Icarus Verilog is an open source Verilog compiler that supports the IEEE-1364 Verilog HDL including IEEE1364-2005 plus.<br/>
 
-### Design :
-- Design is the actual verilog code or a set of verilog codes which has intented functionality to meet with the required specfication.
+
+### RTL Design :
+-RTL design is the implementation of a specs.RTL design is checked  for adherence to the spec by the design.The tool used for Simulating the design is a Simulator.<br />
+- Design is the actual verilog code or a set of verilog codes which has intented functionality to meet with the required specfication.<br/>
+-  RTL Design – Stands for Register Transfer Level. It provides an abstraction of the digital circuit using:<br/>
+   -i.   Combinational logic<br/>
+   -ii.  Registers<br/>
+   -iii. Modules (IP’s or Soft Macros)<br/>
 
 ### Test-Bench:
-- It is the Setup to apply stimulus(Test_Vectors) to Design to check it's Functionality.
+- It is the Setup to apply stimulus(Test_Vectors) to Design to check it's Functionality.Here the Logical functionality is verified.
 
 ### How Simulator Works:
 - Simulator looks for the changes on Inputs Signals
 - Upon changes to input the Output is evaluated
      If there is no change in input,no change in output.
--Simulator is looking for change in the values of input.
+
 ## Test-Bench:
 <p align="center">
     <img src="" />
@@ -44,11 +52,11 @@ On Day1 We preformed tool installation.And analysed the basic flow of Simulator 
     <img src="" />
 </p>
 
-# Part2:Labs Using iverilog and Testbench
+# Design iverilog and Testbench
 
 
 
-# Part3 : Introduction to Yosys.
+# Introduction to Yosys.
 yosys<br/>
 ### .lib Function
 > Why Diffrent Versions of Cells?
@@ -62,5 +70,5 @@ yosys<br/>
 <p align="center">
     <img src="" />
 </p>
-# Part 4: Lab on Yosys
+# Lab on Yosys
 
