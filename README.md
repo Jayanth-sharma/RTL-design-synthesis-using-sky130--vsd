@@ -146,11 +146,39 @@ iverilog good_mux.v tb_good_mux.v
 # Day2: Timming lib,Hierarchical vs Flat Synthesis and Efficient Flop Coding Styles 
 
 # Introduction to Timing.lib
+- The Standard cell library
+-  <p align="center">
+    <img src="" />
+</p> 
  ```
- -Nomencleture of the library. 
+ gvim Sky130_fd_scSky130_fd_sc_hd_tt_025C_1v80.lib  //To view Standard cells
  
  ```
-# hierarchical vs flat
+ Defaults
+  <p align="center">
+    <img src="" />
+</p>
+- To search individual  Standard cells in library use the following Commands
+```
+:syn off     //to turn off the syntax
+:se nu     //To show numbers
+:/cell     //search for "cell"
+:g//       //list all
+```
+here are a few cells:
+ <p align="center">
+    <img src="" />
+</p>
+- Here is a small camprasion of a typical  standard cell
+  <p align="center">
+    <img src="" />
+</p>
+
+# Hierarchical vs flat
+### synth -top
+```
+```
+
 
 # Hierarchical vs Flat Synthesis
 
