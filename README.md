@@ -104,7 +104,8 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
  <p align="center">
     <img src="" />
 </p>
-### Simulation Using iverilog.
+
+###  Simulation Using iverilog. <br/>
 - i.  RTL file and Test-bench files are passed with iverilog simulator.Intially  "a.out" file is outputed <br/>
 
 ```
