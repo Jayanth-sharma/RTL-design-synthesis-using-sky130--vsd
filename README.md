@@ -68,7 +68,9 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
 ### Iverilog Set-up and Simulation
 - open terminal and create a root directory to work-in
 - Here are the commands to Get started
-```mkdir vlsi
+
+```
+   mkdir vlsi
    cd vlsi
    mkdir vsdflow
    git clone  https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
@@ -151,7 +153,7 @@ iverilog good_mux.v tb_good_mux.v
     <img src="" />
 </p> 
  ```
- gvim Sky130_fd_scSky130_fd_sc_hd_tt_025C_1v80.lib  //To view Standard cells
+ gvim Sky130_fd_scSky130_fd_sc_hd_tt_025C_1v80.lib  
  
  ```
  Defaults
@@ -194,9 +196,7 @@ module multiple_modules (input a, input b, input c , output y);
 endmodule
 ```
 - Now Lets Synthesis:
- ```
- 
- ```
+
 
 
 # Hierarchical vs Flat Synthesis
