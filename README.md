@@ -184,7 +184,8 @@ here are a few cells:
     <img src="" />
 </p>
 
-# Hierarchical vs flat
+# Hierarchical vs flat:
+## Hierarchical Synthesis With Multiple Modules:
 
 ### synth -top 
 
@@ -271,6 +272,7 @@ here are a few cells:
   
   ```
   
+  
   ## Netlist of Multiple Models With hierarchical synthesis :
   
   ```
@@ -341,7 +343,20 @@ here are a few cells:
   
 
   ``` 
-## Excercise with .lib
+  <p align="center">
+    <img src="" />
+</p>
+
+### Excercise with .lib
+
+# Flatten Synthesis:
+
+
+ ```
+ 
+ ```
+
+
 
  
 
