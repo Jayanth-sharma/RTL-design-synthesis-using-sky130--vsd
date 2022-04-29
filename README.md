@@ -426,6 +426,12 @@ endmodule
  ```
 
 
+<p align="center">
+    <img src="" />
+</p>
+
+## Sub-Module Level Synthesis:
+
 
  
 
