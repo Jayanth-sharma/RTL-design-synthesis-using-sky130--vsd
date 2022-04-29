@@ -74,8 +74,10 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
    cd vlsi
    mkdir vsdflow
    git clone  https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+   
    ```
 - Now to Check the Content Enter
+
    ```
       cd vlsi
       cd vsdflow
@@ -93,6 +95,7 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
     <img src="" />
 </p>
 - Now check the Verilog files which contains the RTL and Test-Bench files 
+
    ```
       cd sky130RTLDesignAndSynthesisworkshop
       ls
@@ -152,15 +155,18 @@ iverilog good_mux.v tb_good_mux.v
 -  <p align="center">
     <img src="" />
 </p> 
+
  ```
  gvim Sky130_fd_scSky130_fd_sc_hd_tt_025C_1v80.lib  
  
  ```
+ 
  Defaults
   <p align="center">
     <img src="" />
 </p>
-- To search individual  Standard cells in library use the following Commands
+- To search individual  Standard cells in library use the following Commands.
+
 ```
 
 :syn off     //to turn off the syntax
@@ -182,33 +188,34 @@ here are a few cells:
 
 ### synth -top 
 
-- Here is an Verilog Code to Check Synthesis of Multiple Modules
-```
+- Here is an Verilog Code to Check Synthesis of Multiple Modules.
 
-module sub_module2 (input a, input b, output y);
+ ```
+
+ module sub_module2 (input a, input b, output y);
 	assign y = a | b;
-endmodule
+ endmodule
 
-module sub_module1 (input a, input b, output y);
+ module sub_module1 (input a, input b, output y);
 	assign y = a&b;
-endmodule
+ endmodule
 
 
-module multiple_modules (input a, input b, input c , output y);
+ module multiple_modules (input a, input b, input c , output y);
 	wire net1;
 	sub_module1 u1(.a(a),.b(b),.y(net1));  
 	sub_module2 u2(.a(net1),.b(c),.y(y));  
-endmodule
+ endmodule
 
-```
+ ```
 - Now Lets Synthesis:
  
+  
+  ```
  
- ```
- 
- 4.25. Printing statistics.
+  4.25. Printing statistics.
 
-=== multiple_modules ===
+  === multiple_modules ===
 
    Number of wires:                  5
    Number of wire bits:              5
@@ -221,7 +228,7 @@ endmodule
      sub_module1                     1
      sub_module2                     1
 
-=== sub_module1 ===
+  === sub_module1 ===
 
    Number of wires:                  3
    Number of wire bits:              3
@@ -233,7 +240,7 @@ endmodule
    Number of cells:                  1
      $_AND_                          1
 
-=== sub_module2 ===
+  === sub_module2 ===
 
    Number of wires:                  3
    Number of wire bits:              3
@@ -245,7 +252,7 @@ endmodule
    Number of cells:                  1
      $_OR_                           1
 
-=== design hierarchy ===
+  === design hierarchy ===
 
    multiple_modules                  1
      sub_module1                     1
@@ -262,8 +269,8 @@ endmodule
      $_AND_                          1
      $_OR_                           1
 
- 
- ```
+  
+   ```
 
 
 
