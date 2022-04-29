@@ -443,7 +443,7 @@ endmodule
 
 
 # Aknowledgements:
-- [Kunalghosh(Co-founder-VlSI System Design)]()
+- [Kunalghosh(Co-founder-VlSI System Design)](https://github.com/kunalg123)
 - [Shon Taware (Teaching Assistant)](https://github.com/ShonTaware)
  
 
