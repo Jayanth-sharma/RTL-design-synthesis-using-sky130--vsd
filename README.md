@@ -162,10 +162,12 @@ iverilog good_mux.v tb_good_mux.v
 </p>
 - To search individual  Standard cells in library use the following Commands
 ```
+
 :syn off     //to turn off the syntax
 :se nu     //To show numbers
 :/cell     //search for "cell"
 :g//       //list all
+
 ```
 here are a few cells:
  <p align="center">
@@ -177,9 +179,12 @@ here are a few cells:
 </p>
 
 # Hierarchical vs flat
-### synth -top
+
+### synth -top 
+
 - Here is an Verilog Code to Check Synthesis of Multiple Modules
 ```
+
 module sub_module2 (input a, input b, output y);
 	assign y = a | b;
 endmodule
@@ -194,9 +199,12 @@ module multiple_modules (input a, input b, input c , output y);
 	sub_module1 u1(.a(a),.b(b),.y(net1));  //net1 = a&b
 	sub_module2 u2(.a(net1),.b(c),.y(y));  //y = net1|c ,ie y = a&b + c;
 endmodule
+
 ```
-- Now Lets Synthesis: 
+- Now Lets Synthesis:
+ 
  ```
+ 
  4.25. Printing statistics.
 
 === multiple_modules ===
