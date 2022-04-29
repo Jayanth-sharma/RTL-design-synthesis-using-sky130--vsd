@@ -198,7 +198,6 @@ endmodule
 - Now Lets Synthesis:
 
 
-
 # Hierarchical vs Flat Synthesis
 
 
