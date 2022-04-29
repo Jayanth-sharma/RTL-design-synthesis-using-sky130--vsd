@@ -441,9 +441,10 @@ endmodule
   
 # Flop Coding Styles and Optimations:
 
+
 # Aknowledgements:
 - [Kunalghosh(Co-founder-VlSI System Design)]()
-- [Shon Taware (Teaching Assistant)]()
+- [Shon Taware (Teaching Assistant)](https://github.com/ShonTaware)
  
 
 
