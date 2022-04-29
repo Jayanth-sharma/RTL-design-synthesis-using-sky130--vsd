@@ -180,7 +180,8 @@ here are a few cells:
  <p align="center">
     <img src="" />
 </p>
-- Here is a small camprasion of a typical  standard cell
+
+- Here is a small comparsion of a typical  standard cell
   <p align="center">
     <img src="" />
 </p>
