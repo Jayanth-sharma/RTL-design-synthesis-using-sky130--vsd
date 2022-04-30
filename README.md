@@ -662,6 +662,9 @@ endmodule
 
 #  Day 4:GLS,Blocking Vs Non-Blocking and Synthesis Mismatch:
 ## Gata-Level-Simulation Concepts Flow Using Iverilog:
+
+   ![GLS_flowchart](https://user-images.githubusercontent.com/53760504/166114194-4eb24562-e700-465a-b244-4194b88511c6.jpg)
+
 ### Gate Level Simulation:
 -  In GLS the Synthesized netlist is Simulated to Verify  the  logical correctness of the Design.Running the Test bench with Design Under Test.
 -  Netlist is logically same as RTL programme  except the representation of design is more Technology centric to pass the design lower abstraction layer with      neccessary  optimisations done with Available Standard Cells,PVT(eco) corners.By keeping Set of input and Output the same of RTL abstractions. 
@@ -670,8 +673,7 @@ endmodule
 -   
 ## GLS Synthesis Simulation Mismatch:
   
-  ![flow_GLS](https://user-images.githubusercontent.com/53760504/166113871-ed1d652d-c96d-4ada-8591-ae45f16dcb20.jpg)
-
+ 
 
 ## Blocking And Non-Blocking Statements:
 
