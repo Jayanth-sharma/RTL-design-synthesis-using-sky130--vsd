@@ -599,7 +599,23 @@ endmodule
       $_OR_                           1
 
    ```
-    
+-  With opt_clean -purge vs without:
+   With Clean:
+   
+    ![multiple_modules_opt_show](https://user-images.githubusercontent.com/53760504/166092021-b8880722-74ac-444b-ad00-9d7897fb9e47.jpg)
+   Without clean:
+   ![without_opt_clean](https://user-images.githubusercontent.com/53760504/166092037-c700d3dc-e57b-4dcf-b7f0-05471266bbc9.jpg)
+- Multiple_module_opt2 hier vs Flatten:
+- Similarly Hier with Multiple_module_opt2
+  
+  ![Multiple_module2_opt_hier](https://user-images.githubusercontent.com/53760504/166092623-13b703c0-ea37-4151-ab9b-286ffb2a9f1e.jpg)
+- Flatten
+  ![flatten_opt2](https://user-images.githubusercontent.com/53760504/166092729-13fb7a58-42b9-409b-86d9-0c6d9a88137f.jpg)
+  ![multiple_module_opt2_flatten](https://user-images.githubusercontent.com/53760504/166092814-be440471-4f4a-4d99-879f-c9d174098eb0.jpg)
+
+## Sub-module level Syntheis with Optimisation:
+   
+
 ## Seqential Logic Optimisation:
 ## Seqential Logic Optimisation For Used Inputs:
 
