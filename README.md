@@ -501,7 +501,9 @@ endmodule
    endmodule
   
    ```
-
+# Day 3:Combinational And Synthesis Optimisation:
+# Intro To  Optimisation:
+# Combinational  Logic Optimisation :
 
 
 # Acknowledgements:
