@@ -675,6 +675,8 @@ endmodule
 -   Also Ensuring timing of design is met.For which GLS needs a be run with Design Annotation.
 -   
 ## GLS Synthesis Simulation Mismatch:
+- Simulator works with the concept of activity.
+- Missing Sensitivety List
   
  
 
