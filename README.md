@@ -659,6 +659,21 @@ endmodule
 
 ### Experiment:
 - Now Let's assign count(q) of the counter as follows:
+
+#  Day 4:GLS,Blocking Vs Non-Blocking and Synthesis Mismatch:
+## Gata-Level-Simulation Concepts Flow Using Iverilog:
+### Gate Level Simulation:
+-  In GLS the Synthesized netlist is Simulated to Verify  the  logical correctness of the Design.Running the Test bench with Design Under Test.
+-  Netlist is logically same as RTL programme  except the representation of design is more Technology centric to pass the design lower abstraction layer with      neccessary  optimisations done with Available Standard Cells,PVT(eco) corners.By keeping Set of input and Output the same of RTL abstractions. 
+    -  Same Test Bench can be Used 
+-   Also Ensuring timing of design is met.For which GLS needs a be run with Design Annotation.
+-   
+## GLS Synthesis Simulation Mismatch:
+   ![GLS_Flowchart](https://user-images.githubusercontent.com/53760504/166113667-1ea8c9ce-9bd3-4610-9d44-3b2ae6630139.jpg)
+
+
+## Blocking And Non-Blocking Statements:
+
  
 
 
