@@ -58,8 +58,9 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
 - RTL Design
 - Test-Bench
 - As Shown Below: 
-<p align="center">
-    <img src="" />
+   <p>
+	align="center">
+    <img src="Intro/Gtkwave_Flow.jpg" />
 </p>
 - The iverilog simulator dumps .vcd(value change dump) which can be viewed using gtkwave <br/>
 - Here is a Blockdiagram representation of test-bench:
