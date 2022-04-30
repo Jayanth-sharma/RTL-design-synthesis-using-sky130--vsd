@@ -513,7 +513,9 @@ endmodule
       ```
  - The following command Removes the unused Wires:
     
-    ```  opt_clean -purge
+    ``` 
+    opt_clean -purge
+    
     ```
   
     
