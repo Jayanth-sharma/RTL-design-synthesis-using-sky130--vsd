@@ -505,16 +505,17 @@ endmodule
 ## Intro To  Optimisation:
 ## Combinational  Logic Optimisation : 
  -  opt_check.v
+ 
     ```
     module opt_check (input a , input b , output y);
 	assign y = a?b:0;
     endmodule 
-   ```
-
-  
-  ```
-    opt_clean -purge
+      ```
+ - The following command Removes the unused Wires:
+    
+    ```  opt_clean -purge
     ```
+  
     
 ##  Excerise:
 -  opt_check4:
