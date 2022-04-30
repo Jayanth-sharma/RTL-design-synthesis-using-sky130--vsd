@@ -609,7 +609,10 @@ endmodule
 - Similarly Hier with Multiple_module_opt2
   
   ![Multiple_module2_opt_hier](https://user-images.githubusercontent.com/53760504/166092623-13b703c0-ea37-4151-ab9b-286ffb2a9f1e.jpg)
-- Flatten
+- Flatten multiple_module_opt2:
+  <p align="center">
+    <img src="![flatten_opt2](https://user-images.githubusercontent.com/53760504/166092729-13fb7a58-42b9-409b-86d9-0c6d9a88137f.jpg)" />
+</p>
   ![flatten_opt2](https://user-images.githubusercontent.com/53760504/166092729-13fb7a58-42b9-409b-86d9-0c6d9a88137f.jpg)
   ![multiple_module_opt2_flatten](https://user-images.githubusercontent.com/53760504/166092814-be440471-4f4a-4d99-879f-c9d174098eb0.jpg)
 
