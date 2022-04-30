@@ -621,6 +621,7 @@ endmodule
    
 
 ## Seqential Logic Optimisation:
+## Sequential Optimisation
 - dff_const1.v 
   ```
   module dff_const1(input clk, input reset, output reg q);   
@@ -646,7 +647,12 @@ endmodule
    endmodule
   ```
 ### Optimisation On Yosys:
--  For optimisation  
+-  For optimisation:
+-  Don't  forgot to add 
+   ```
+   dfflibmap  ./my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib  
+   ```
+   
 ## Seqential Logic Optimisation For Used Inputs:
 
 
