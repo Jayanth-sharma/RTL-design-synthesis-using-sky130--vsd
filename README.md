@@ -63,7 +63,7 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
 </p>
 - The iverilog simulator dumps .vcd(value change dump) which can be viewed using gtkwave <br/>
 - Here is a Blockdiagram representation of test-bench:
-  <p align="https://user-images.githubusercontent.com/53760504/166114371-ab0bf1c4-0c01-4144-8434-095194c5c6cf.jpg">
+  <p align="">
     <img src="" />
 </p>
 
