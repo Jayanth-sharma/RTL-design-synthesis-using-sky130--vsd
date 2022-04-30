@@ -502,8 +502,10 @@ endmodule
   
    ```
 # Day 3:Combinational And Synthesis Optimisation:
-# Intro To  Optimisation:
-# Combinational  Logic Optimisation :
+## Intro To  Optimisation:
+## Combinational  Logic Optimisation :
+## Seqential Logic Optimisation:
+## Seqential Logic Optimisation For Used Inputs:
 
 
 # Acknowledgements:
