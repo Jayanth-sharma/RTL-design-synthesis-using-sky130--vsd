@@ -503,7 +503,14 @@ endmodule
    ```
 # Day 3:Combinational And Synthesis Optimisation:
 ## Intro To  Optimisation:
-## Combinational  Logic Optimisation :
+## Combinational  Logic Optimisation : 
+ -  opt_check.v
+    ```
+    module opt_check (input a , input b , output y);
+	assign y = a?b:0;
+    endmodule
+   
+   ```
 ## Seqential Logic Optimisation:
 ## Seqential Logic Optimisation For Used Inputs:
 
