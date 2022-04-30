@@ -521,8 +521,35 @@ endmodule
 -  opt_check4:
 
 ### Multiple_modules_opt In Hier vS flat:
--   UnderExcerise
-    Here are the verilog_files associated with Mutliple Modules for Optimisation:
+-  UnderExcerise
+   Here are the verilog_files associated with Mutliple Modules for Optimisation:
+   ![excerise_multiple_opt](https://user-images.githubusercontent.com/53760504/166091041-d8bad134-6bcf-4710-b72d-c26a4dfbe513.jpg)
+    
+-  Verilog Code For Multiptle_modules_opt:
+   ```
+   module sub_module1(input a , input b , output y);
+   assign y = a & b;
+   endmodule
+
+
+   module sub_module2(input a , input b , output y);
+   assign y = a^b;
+   endmodule
+
+
+   module multiple_module_opt(input a , input b , input c , input d , output y);
+   wire n1,n2,n3;
+
+   sub_module1 U1 (.a(a) , .b(1'b1) , .y(n1));
+      sub_module2 U2 (.a(n1), .b(1'b0) , .y(n2));
+      sub_module2 U3 (.a(b), .b(d) , .y(n3));
+
+     assign y = c | (b & n1); 
+
+
+     endmodule
+     
+   ```
     
 ## Seqential Logic Optimisation:
 ## Seqential Logic Optimisation For Used Inputs:
