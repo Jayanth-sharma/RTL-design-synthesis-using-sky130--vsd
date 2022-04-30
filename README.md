@@ -511,6 +511,13 @@ endmodule
     endmodule
    
    ```
+
+  
+   ```
+    opt_clean -purge
+  
+   ```
+
 ## Seqential Logic Optimisation:
 ## Seqential Logic Optimisation For Used Inputs:
 
