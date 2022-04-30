@@ -613,8 +613,11 @@ endmodule
     <p align="center">
     <img src="https://user-images.githubusercontent.com/53760504/166092729-13fb7a58-42b9-409b-86d9-0c6d9a88137f.jpg" />
   </p>
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/53760504/166092814-be440471-4f4a-4d99-879f-c9d174098eb0.jpg" />
+ </p>
+
  
-  ![multiple_module_opt2_flatten](https://user-images.githubusercontent.com/53760504/166092814-be440471-4f4a-4d99-879f-c9d174098eb0.jpg)
 
 ## Sub-module level Syntheis with Optimisation:
    
