@@ -623,7 +623,27 @@ endmodule
 ## Seqential Logic Optimisation:
 - dff_const1.v 
   ```
-  
+  module dff_const1(input clk, input reset, output reg q);   
+   always @(posedge clk, posedge reset) 
+   begin
+	if(reset)
+		q <= 1'b0;
+	else
+		q <= 1'b1;
+    end
+
+    endmodule
+   //td_dff_const1
+   module dff_const1(input clk, input reset, output reg q);
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+		q <= 1'b0;
+	else
+		q <= 1'b1;
+end
+
+endmodule
   ```
 ## Seqential Logic Optimisation For Used Inputs:
 
