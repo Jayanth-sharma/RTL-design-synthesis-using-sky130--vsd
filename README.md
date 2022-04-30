@@ -618,10 +618,6 @@ endmodule
   <p align="center">
     <img src="https://user-images.githubusercontent.com/53760504/166092814-be440471-4f4a-4d99-879f-c9d174098eb0.jpg" />
  </p>
-
- 
-
-## Sub-module level Syntheis with Optimisation:
    
 
 ## Seqential Logic Optimisation:
