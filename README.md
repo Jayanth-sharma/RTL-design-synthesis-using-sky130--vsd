@@ -656,6 +656,12 @@ endmodule
 ## Seqential Logic Optimisation For Used Inputs:
 
 
+
+### Experiment:
+- Now Let's assign count(q) of the counter as follows:
+ 
+
+
 # Acknowledgements:
 - [Kunalghosh(Co-founder-VlSI System Design)](https://github.com/kunalg123)
 - [Shon Taware (Teaching Assistant)](https://github.com/ShonTaware)
