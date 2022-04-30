@@ -664,7 +664,7 @@ endmodule
 - Now Let's assign count(q) of the counter as follows:
 
 #  Day 4:GLS,Blocking Vs Non-Blocking and Synthesis Mismatch:
-## Gata-Level-Simulation Concepts Flow Using Iverilog:
+## Gate-Level-Simulation Concepts Flow Using Iverilog:
 
    ![GLS_flowchart](https://user-images.githubusercontent.com/53760504/166114194-4eb24562-e700-465a-b244-4194b88511c6.jpg)
 
