@@ -526,6 +526,7 @@ endmodule
    ![excerise_multiple_opt](https://user-images.githubusercontent.com/53760504/166091041-d8bad134-6bcf-4710-b72d-c26a4dfbe513.jpg)
     
 -  Verilog Code For Multiptle_modules_opt:
+- 
    ```
    module sub_module1(input a , input b , output y);
    assign y = a & b;
@@ -549,6 +550,54 @@ endmodule
 
      endmodule
      
+   ```
+   Synthesis Report:
+   
+   ```
+   3.25. Printing statistics.
+
+    === sub_module1 ===
+
+    Number of wires:                  3
+    Number of wire bits:              3
+    Number of public wires:           3
+    Number of public wire bits:       3
+    Number of memories:               0
+    Number of memory bits:            0
+    Number of processes:              0
+    Number of cells:                  1
+      $_AND_                          1
+
+    === multiple_module_opt ===
+
+    Number of wires:                  7
+    Number of wire bits:              7
+    Number of public wires:           6
+    Number of public wire bits:       6
+    Number of memories:               0
+    Number of memory bits:            0
+    Number of processes:              0
+    Number of cells:                  3
+      $_AND_                          1
+      $_OR_                           1
+      sub_module1                     1
+ 
+    === design hierarchy ===
+
+    multiple_module_opt               1
+      sub_module1                     1
+
+    Number of wires:                 10
+    Number of wire bits:             10
+    Number of public wires:           9
+    Number of public wire bits:       9
+    Number of memories:               0
+    Number of memory bits:            0
+    Number of processes:              0
+    Number of cells:                  3
+      $_AND_                          2
+      $_OR_                           1
+
    ```
     
 ## Seqential Logic Optimisation:
