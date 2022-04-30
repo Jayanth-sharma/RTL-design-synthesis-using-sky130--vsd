@@ -58,7 +58,7 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
 - RTL Design
 - Test-Bench
 - As Shown Below: 
-       <p>
+       <p
 	align="center">
     <img src="Intro/Gtkwave_Flow.jpg" />
     </p>
