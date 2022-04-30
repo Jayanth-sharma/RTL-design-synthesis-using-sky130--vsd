@@ -519,8 +519,11 @@ endmodule
     
 ##  Excerise:
 -  opt_check4:
-### Multiple_modules_opt In Hier vS flat:
 
+### Multiple_modules_opt In Hier vS flat:
+-   UnderExcerise
+    Here are the verilog_files associated with Mutliple Modules for Optimisation:
+    
 ## Seqential Logic Optimisation:
 ## Seqential Logic Optimisation For Used Inputs:
 
