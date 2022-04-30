@@ -645,6 +645,8 @@ endmodule
  
    endmodule
   ```
+### Optimisation On Yosys:
+-  For optimisation  
 ## Seqential Logic Optimisation For Used Inputs:
 
 
