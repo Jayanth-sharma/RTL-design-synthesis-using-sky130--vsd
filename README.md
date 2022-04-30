@@ -516,6 +516,10 @@ endmodule
   ```
     opt_clean -purge
     ```
+    
+##  Excerise:
+-  opt_check4:
+### Multiple_modules_opt In Hier vS flat:
 
 ## Seqential Logic Optimisation:
 ## Seqential Logic Optimisation For Used Inputs:
