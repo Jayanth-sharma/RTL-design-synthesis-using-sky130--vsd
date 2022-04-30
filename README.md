@@ -669,7 +669,8 @@ endmodule
 -   Also Ensuring timing of design is met.For which GLS needs a be run with Design Annotation.
 -   
 ## GLS Synthesis Simulation Mismatch:
-   ![GLS_Flowchart](https://user-images.githubusercontent.com/53760504/166113667-1ea8c9ce-9bd3-4610-9d44-3b2ae6630139.jpg)
+  
+  ![flow_GLS](https://user-images.githubusercontent.com/53760504/166113871-ed1d652d-c96d-4ada-8591-ae45f16dcb20.jpg)
 
 
 ## Blocking And Non-Blocking Statements:
