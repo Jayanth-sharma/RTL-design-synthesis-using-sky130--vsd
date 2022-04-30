@@ -653,7 +653,7 @@ endmodule
 -  For optimisation:
 -  Don't  forgot to add 
    ```
-   dfflibmap  ./my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib  
+   dfflibmap  ./my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib  
    ```
    
 ## Seqential Logic Optimisation For Used Inputs:
