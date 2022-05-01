@@ -174,8 +174,9 @@ iverilog good_mux.v tb_good_mux.v
 <p align="center">
     <img src="Day1/Yosys/Hold_time.jpg" />
 </p>
-> Why Diffrent Versions of  Same Standard Cells?
-### Lets Do some Math:<br/>
+> Why Diffrent Versions of  Same Standard Cells?<br/>
+
+###  Lets Do some Math:<br/>
  
  ![Set_hold](https://user-images.githubusercontent.com/53760504/166146239-2581542d-a9cf-42c4-acf5-b789c7e18409.jpeg)
 
