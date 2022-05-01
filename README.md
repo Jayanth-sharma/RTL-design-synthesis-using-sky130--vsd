@@ -281,12 +281,13 @@ iverilog good_mux.v tb_good_mux.v
   
   ```
 
-# Day2: Timming lib,Hierarchical vs Flat Synthesis and Efficient Flop Coding Styles 
+ # Day2: Timming lib,Hierarchical vs Flat Synthesis and Efficient Flop Coding Styles 
 
 # Introduction to Timing.lib
 - The Standard cell library :
 - The Library files We are Using Here are Sky130 Process Node:
 - About Sky130 Process Node:The SKY130 is a mature 180nm-130nm hybrid technology originally developed internally by Cypress Semiconductor before being spun out into     SkyWater Technology and made accessible to general industry.  
+ 
  ```
  gvim Sky130_fd_scSky130_fd_sc_hd_tt_025C_1v80.lib  
  
