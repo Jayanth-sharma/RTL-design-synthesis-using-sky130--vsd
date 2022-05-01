@@ -151,21 +151,23 @@ iverilog good_mux.v tb_good_mux.v
    <p align="center">
     <img src="Day1/Yosys/RTL_gate_level_illustrations.jpg" />
 </p>
-### Flow of a Synthesizer:
+
+###  Flow of a Synthesizer:
   <p align="center">
     <img src="Day1/Yosys/Synth_flow_advance.jpg" />
 </p>
-### .lib Function
+###  .lib Function
 > Why Diffrent Versions of Cells?
   <p align="center">
     <img src="Day1/Yosys/Standard cells.jpg" />
 </p>
 >Setup_time:
   <p align="center">
-    <img src="" />
+    <img src="https://user-images.githubusercontent.com/53760504/166146134-5a2e75b4-457c-4ee0-992e-e3920824ac4e.jpg" />
 </p>
 
 >Hold time:
+
 <p align="center">
     <img src="" />
 </p>
