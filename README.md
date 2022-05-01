@@ -4,21 +4,30 @@
 This is a Five-Day workshop is  on RTL Design using verilog with SKY130 Technology which is organised by [VLSI System Design VSD](https://www.vlsisystemdesign.com/).Main agenda of this Five-Day workshop is on  Synthesis of verilog code into a predictable logic in silicon which is Gate-level netlist.As every verilog code can't be synthesizable and Even if does  it may result in different logic depending on the coding styles used.On Day-1 of the workshop I was introduced with Installation and Logical verification using iverilog.And Basic Translation of Verilog code in Gate-Level netlist using Yosys.  
 
 # **TOOLS :**
+-  Icarus Verilog: It is a verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format.Icarus Verilog is an open source Verilog compiler that supports the IEEE-1364 Verilog HDL including IEEE1364- 2005 plus.<br/>
+-  GTKwave : GTKWave is a VCD waveform viewer based on the GTK library. This viewer support VCD and LXT formats for signal dumps. Which reads LXT, LXT2, VZT, FST, and GHW files as well as standard Verilog VCD/EVCD files and allows their viewing. <br/>
+-  Yosys : Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains. Technology used: Sky130 technology.<br/>.
+
   
 # **INDEX**
 - [RTL Design Synthesis using Sky130 Technology](https://github.com/Jayanth-sharma/RTL-design-synthesis-using-sky130--vsd#rtl-design-with-verilog-using-sky130-technology)<br/>
        - [Brief Intro To Course](https://github.com/Jayanth-sharma/RTL-design-synthesis-using-sky130--vsd#brief-intro-to-course)
    
-   
-   
-   
+-[Day1 :Introduction to Verilog RTL Design & Synthesis]()
+       - [Introduction to Open-source Simulator iverilog]()
+            - [Introduction to iverilog,Design and testbench]()
+            - [Design iverilog and Testbench]()
+            - [Iverilog Set-up and Simulation]()
+	    - [ Simulation Using iverilog.]()
+       - [Introduction to Yosys Open SYnthesis Suite]()  
+          -   [Logic Synthesis of Mux using Yosys]() 
 
 
 # DAY1 : Introduction To Verilog RTL Design and Synthesis.
 
 On the first day of the We preformed tool set-up.And analysed the basic flow of Simulator and Synthesiers.We also analysed the translated Gate-level netlist with Different Flavours of Standard cell types with  Constraints  of  mainly focusing  on Timing in Circuits  taking  Set-up and Hold-time into Consideration.And correlating the Performance of Cells with  wide width and narrow width to drive the Capacitors.And tried out Synthesis of a Good mux as well as Checked the Logical Funtionality in Iverilog and Gtkwave.<br/>
 
-# Introduction to Open-source Simulator iverilog:
+## Introduction to Open-source Simulator iverilog:
 
 
 ## Introduction to iverilog,Design and testbench
@@ -27,7 +36,6 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
 - It is technique for applying different input stimulus to the design at different times to check if the RTL code behaves in an intended way.Usually using a Simulation Software(Simulator).In our case we are dealing with Digital design which is modelled using HDL (hardware description language) like VHDL,Verilog,System Verilog.And for high-level synthesis languages too such as C/C++,SystemC etc.
 ### Simulator:
 - A Simulator is a tool which is used for checking a funtionality of Design.The simulator used here is "iverilog". <br />
-- Icarus Verilog (iverilog) : It is a verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format.Icarus Verilog is an open source Verilog compiler that supports the IEEE-1364 Verilog HDL including IEEE1364-2005 plus.<br/>
 
 
 ### RTL Design :
@@ -48,7 +56,7 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
 - Simulator dumps the change to the ouput to a file accoridng to the change in input.
 
 
-# Design iverilog and Testbench
+## Design iverilog and Testbench
 - The RTL design written in verilog code has some primary inputs and primary outputs. It may have one or more primary inputs and one or more corresponding primary       outputs.
 - We need to give stimulus to all the primary inputs and need to observe the primary outputs. Thus we need stimulus generator at the input and stimulus observer at the   output.
 - For giving stimulus we write the test bench, for that the design(module) is instantiated in the test bench, then stimulus is applied.
@@ -69,7 +77,7 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
 </p>
 
 
-### Iverilog Set-up and Simulation
+## Iverilog Set-up and Simulation
 - open terminal and create a root directory to work-in
 - Here are the commands to Get started
 
@@ -109,7 +117,7 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
     <img src="" />
 </p>
 
-###  Simulation Using iverilog. <br/>
+##  Simulation Using iverilog. <br/>
 - i.  RTL file and Test-bench files are passed with iverilog simulator.Intially  "a.out" file is outputed <br/>
 
 ```
@@ -136,7 +144,7 @@ iverilog good_mux.v tb_good_mux.v
     <img src="" />
 </p>
 
-# Introduction to Yosys.
+# Introduction to Yosys Open SYnthesis Suite.
 - Yosys:
 - This is a framework for RTL synthesis tools. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application   domains.Which converts a RTL design to Gate-level Netlist.<br/>
 ### .lib Function
@@ -151,7 +159,8 @@ iverilog good_mux.v tb_good_mux.v
 <p align="center">
     <img src="" />
 </p>
-## Lab on Yosys
+## Logic Synthesis of Mux using Yosys:
+
 
 # Day2: Timming lib,Hierarchical vs Flat Synthesis and Efficient Flop Coding Styles 
 
