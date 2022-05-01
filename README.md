@@ -316,13 +316,14 @@ iverilog good_mux.v tb_good_mux.v
 </p> 
  Default Technology Process:
    <p align="center">
-    <img src="" />
+    <img src="https://user-images.githubusercontent.com/53760504/166155561-cb499f0d-e2a1-4a8d-b79f-6a36ba035301.jpg" />
 </p>
  
  Defaults PVT corners:
   <p align="center">
     <img src="Day2/Timing.lib/default_PVT.jpg" />
 </p>
+
 - To search individual  Standard cells in library use the following Commands.
 
 ```
