@@ -13,14 +13,14 @@ This is a Five-Day workshop is  on RTL Design using verilog with SKY130 Technolo
 - [RTL Design Synthesis using Sky130 Technology](https://github.com/Jayanth-sharma/RTL-design-synthesis-using-sky130--vsd#rtl-design-with-verilog-using-sky130-technology)<br/>
        - [Brief Intro To Course](https://github.com/Jayanth-sharma/RTL-design-synthesis-using-sky130--vsd#brief-intro-to-course)
    
--[Day1 :Introduction to Verilog RTL Design & Synthesis]()
-       - [Introduction to Open-source Simulator iverilog]()
-            - [Introduction to iverilog,Design and testbench]()
-            - [Design iverilog and Testbench]()
-            - [Iverilog Set-up and Simulation]()
-	    - [ Simulation Using iverilog.]()
-       - [Introduction to Yosys Open SYnthesis Suite]()  
-          -   [Logic Synthesis of Mux using Yosys]() 
+-[Day1 :Introduction to Verilog RTL Design & Synthesis]()<br/>
+       - [Introduction to Open-source Simulator iverilog]()<br/>
+            - [Introduction to iverilog,Design and testbench]()<br/>
+            - [Design iverilog and Testbench]()<br/>
+            - [Iverilog Set-up and Simulation]()<br/>
+	    - [ Simulation Using iverilog.]()<br/>
+       - [Introduction to Yosys Open SYnthesis Suite]()<br/> 
+          -   [Logic Synthesis of Mux using Yosys]() <br/>
 
 
 # DAY1 : Introduction To Verilog RTL Design and Synthesis.
