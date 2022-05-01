@@ -822,7 +822,7 @@ endmodule
 -   
 ## GLS Synthesis Simulation Mismatch:
 - Simulator works with the concept of activity.
-- Missing Sensitivety List
+- Missing Sensitivity List
    ```
     module ternary_operator_mux (input i0 , input i1 , input sel , output y);
 	assign y = sel?i1:i0;
@@ -914,12 +914,13 @@ endmodule
      endmodule
   
   ```
--  Partial latch Assignments:
+-  Partial latch Assignments:<br/>
+
         ```
          module partial_case_assign (input i0 , input i1 , input i2 , input [1:0] sel, output reg y , output reg x);    
          always @ (*)
          begin
-	 case(sel)
+	    case(sel)
 		2'b00 : begin
 			y = i0;
 			x = i2;
@@ -929,9 +930,9 @@ endmodule
 		           x = i1;
 			   y = i2;
 			  end
-	  endcase
-          end
-         endmodule
+	    endcase
+            end
+          endmodule
 	 
        ```
 - Bad Case:
@@ -986,7 +987,7 @@ endmodule
   endmodule
 
    ```
--  demux:
+-  demux: <br/>
 -  Demux using Case. 
   ```
   
@@ -1170,7 +1171,7 @@ endmodule
    endmodule
   ```
 # Acknowledgements:
-- [Kunalghosh(Co-founder-VlSI System Design)](https://github.com/kunalg123)
+- [Kunalghosh(Co-founder-VLSI System Design)](https://github.com/kunalg123)
 - [Shon Taware (Teaching Assistant)](https://github.com/ShonTaware)
  
 
