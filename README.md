@@ -175,11 +175,16 @@ iverilog good_mux.v tb_good_mux.v
     <img src="Day1/Yosys/Hold_time.jpg" />
 </p>
 > Why Diffrent Versions of  Same Standard Cells?
-### Lets Do some Math:
+### Lets Do some Math:<br/>
+ 
  ![Set_hold](https://user-images.githubusercontent.com/53760504/166146239-2581542d-a9cf-42c4-acf5-b789c7e18409.jpeg)
+
+
 - To maintain set-up Time In the Logic we need A Least Propagation Delay cells.As Propagation delay is least  Wide Width Transistor are preferred.<br/>
 -  We Trade for Performance over higher Power,Area,Timing(In this Case).
- ![hold_time](https://user-images.githubusercontent.com/53760504/166146453-7f7e87c9-c665-4776-b57a-a0fa1b599441.jpeg)
+
+![hold_time](https://user-images.githubusercontent.com/53760504/166146453-7f7e87c9-c665-4776-b57a-a0fa1b599441.jpeg)
+
 - Similarly to Maintain Hold-Time delays We need Cells With Relatively More Progation Delay Cells.As Propagation delay is high Narrow Width Transistor are preferred. -  We Trade for Lower Power,Area,Timing(In this Case) over Performance. 
    That the Reason we are Having Bucket of Diffrent Standard Cells for The Same Logic.<br/>
   
