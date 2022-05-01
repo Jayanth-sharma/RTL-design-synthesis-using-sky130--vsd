@@ -215,8 +215,17 @@ iverilog good_mux.v tb_good_mux.v
 - Mapping to the standard library
   ```$  abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
   ```
-  
+- abc : This pass uses the ABC tool for technology mapping of yosys's internal gate library to a target architecture. This command converts RTL code into gates,cells   which is taken from the sky130_fd_sc_hd__tt_025C_1v80.lib file. 
+- -liberty : It generate netlists for the specified cell library (using the liberty file format).
+   ![Screenshot 2022-05-01 192253](https://user-images.githubusercontent.com/53760504/166148999-e24b2e80-e1ac-4f13-b389-5513b9b883ec.jpg)
 
+  
+- To view the result as a grapviz use below command 
+  ```$ show
+  ```
+  ![mux_show](https://user-images.githubusercontent.com/53760504/166149041-8147ef36-c340-44f2-be29-e72ae541c6d3.jpg)
+
+  
 # Day2: Timming lib,Hierarchical vs Flat Synthesis and Efficient Flop Coding Styles 
 
 # Introduction to Timing.lib
