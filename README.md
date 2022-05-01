@@ -1034,31 +1034,33 @@ module demux_case(o0, o1, o2, o3, o4, o5, o6, o7, sel, i);
 endmodule
   ```
 # Generate :
+
 - Ripple carry adder:
   ```
   module rca (input [7:0] num1 , input [7:0] num2 , output [8:0] sum);
-wire [7:0] int_sum;
-wire [7:0]int_co;
+  wire [7:0] int_sum;
+  wire [7:0]int_co;
 
-genvar i;
-generate
+   genvar i;
+    generate
 	for (i = 1 ; i < 8; i=i+1) begin
 		fa u_fa_1 (.a(num1[i]),.b(num2[i]),.c(int_co[i-1]),.co(int_co[i]),.sum(int_sum[i]));
 	end
 
-endgenerate
-fa u_fa_0 (.a(num1[0]),.b(num2[0]),.c(1'b0),.co(int_co[0]),.sum(int_sum[0]));
+   endgenerate
+   fa u_fa_0 (.a(num1[0]),.b(num2[0]),.c(1'b0),.co(int_co[0]),.sum(int_sum[0]));
 
 
-assign sum[7:0] = int_sum;
-assign sum[8] = int_co[7];
-endmodule
+   assign sum[7:0] = int_sum;
+   assign sum[8] = int_co[7];
+   endmodule
 
   ```
+  Verilog Program for Full Adder Instantiation:
   ```
   module fa (input a , input b , input c, output co , output sum);
 	assign {co,sum}  = a + b + c ;
-endmodule
+   endmodule
   ```
 # Acknowledgements:
 - [Kunalghosh(Co-founder-VlSI System Design)](https://github.com/kunalg123)
