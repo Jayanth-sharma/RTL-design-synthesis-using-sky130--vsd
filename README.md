@@ -757,22 +757,23 @@ endmodule
    ``` 
 - Complete Case:
   ```module comp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
-always @ (*)
-begin
+    always @ (*)
+     begin
 	case(sel)
 		2'b00 : y = i0;
 		2'b01 : y = i1;
 		default : y = i2;
 	endcase
-end
-endmodule
+     end
+     endmodule
+  
   ```
 -  Partial latch Assignments:
-  ```
-  module partial_case_assign (input i0 , input i1 , input i2 , input [1:0] sel, output reg y , output reg x);
-always @ (*)
-begin
-	case(sel)
+        ```
+         module partial_case_assign (input i0 , input i1 , input i2 , input [1:0] sel, output reg y , output reg x);    
+         always @ (*)
+         begin
+	 case(sel)
 		2'b00 : begin
 			y = i0;
 			x = i2;
@@ -782,14 +783,17 @@ begin
 		           x = i1;
 			   y = i2;
 			  end
-	endcase
-end
-endmodule
-```
+	  endcase
+          end
+         endmodule
+	 
+       ```
 - Bad Case:
-  ```module bad_case (input i0 , input i1, input i2, input i3 , input [1:0] sel, output reg y);
-always @(*)
-begin
+  
+  ```
+    module bad_case (input i0 , input i1, input i2, input i3 , input [1:0] sel, output reg y);
+    always @(*)
+    begin
 	case(sel)
 		2'b00: y = i0;
 		2'b01: y = i1;
@@ -797,9 +801,9 @@ begin
 		2'b1?: y = i3;
 		//2'b11: y = i3;
 	endcase
-end
+       end
 
-endmodule
+     endmodule
   ```
  
 # Acknowledgements:
