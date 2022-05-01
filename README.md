@@ -162,7 +162,7 @@ iverilog good_mux.v tb_good_mux.v
   <p align="center">
     <img src="Day1/Yosys/Standard cells.jpg" />
 </p>
->Setup_time:
+> Setup_time:
   <p align="center">
     <img src="https://user-images.githubusercontent.com/53760504/166146134-5a2e75b4-457c-4ee0-992e-e3920824ac4e.jpg" />
 </p>
