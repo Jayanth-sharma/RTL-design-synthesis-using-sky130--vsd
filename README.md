@@ -240,6 +240,12 @@ iverilog good_mux.v tb_good_mux.v
   <p align="center">
     <img src="https://user-images.githubusercontent.com/53760504/166149875-534f47c4-0ca4-4b10-b3b8-d78e65037d76.jpg " />
 </p> 
+- to view netlist:
+  ``` $ !gvim good_mux_netlist.v
+  ```
+  ```
+  
+  ```
 # Day2: Timming lib,Hierarchical vs Flat Synthesis and Efficient Flop Coding Styles 
 
 # Introduction to Timing.lib
@@ -250,6 +256,7 @@ iverilog good_mux.v tb_good_mux.v
  gvim Sky130_fd_scSky130_fd_sc_hd_tt_025C_1v80.lib  
  
  ```
+ 
 
 #  Nomenclature of Standard Cell Library. 
   <p align="center">
