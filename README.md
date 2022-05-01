@@ -341,7 +341,7 @@ here are a few cells:
 
 - Here is a small comparsion of a typical  standard cell
   <p align="center">
-    <img src="" />
+    <img src="Day2/Timing.lib/compare_cell_types.jpg" />
 </p>
 
 # Hierarchical vs flat:
