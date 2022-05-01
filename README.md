@@ -189,7 +189,8 @@ iverilog good_mux.v tb_good_mux.v
   
 ## Logic Synthesis of Mux using Yosys:
    Here is A block-Diagram Representation of How The RTL Design Is Synthesized.
-   
+   ![block_diagram](https://user-images.githubusercontent.com/53760504/166147044-8106d4a7-bc7b-4337-a1f3-6cdc213ebd64.jpg)
+
 
 # Day2: Timming lib,Hierarchical vs Flat Synthesis and Efficient Flop Coding Styles 
 
