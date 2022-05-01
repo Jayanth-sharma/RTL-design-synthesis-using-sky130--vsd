@@ -729,7 +729,7 @@ endmodule
     end   
     endmodule
     ```
-   
+ - InComplete if2:   
    
     ```module incomp_if2 (input i0 , input i1 , input i2 , input i3, output reg y);
        always @ (*)
