@@ -286,7 +286,7 @@ iverilog good_mux.v tb_good_mux.v
 # Introduction to Timing.lib
 - The Standard cell library :
 - The Library files We are Using Here are Sky130 Process Node:
-- About Sky130 Process Node: 
+- About Sky130 Process Node:The SKY130 is a mature 180nm-130nm hybrid technology originally developed internally by Cypress Semiconductor before being spun out into     SkyWater Technology and made accessible to general industry.  
  ```
  gvim Sky130_fd_scSky130_fd_sc_hd_tt_025C_1v80.lib  
  
@@ -297,10 +297,14 @@ iverilog good_mux.v tb_good_mux.v
   <p align="center">
     <img src=" " />
 </p> 
- 
- Defaults
-  <p align="center">
+ Default Technology Process:
+   <p align="center">
     <img src="" />
+</p>
+ 
+ Defaults PVT corners:
+  <p align="center">
+    <img src="Day2/Timing.lib/default_PVT.jpg" />
 </p>
 - To search individual  Standard cells in library use the following Commands.
 
