@@ -118,13 +118,13 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
 </p>
 
 ##  Simulation Using iverilog. <br/>
-- i.  RTL file and Test-bench files are passed with iverilog simulator.Intially  "a.out" file is outputed <br/>
+-  i.  RTL file and Test-bench files are passed with iverilog simulator.Intially  "a.out" file is outputed <br/>
 
 ```
 iverilog good_mux.v tb_good_mux.v
 
 ```
-- ii. Now to get the .vcd file <br/>
+-  ii. Now to get the .vcd file <br/>
 
 ```
 ./a.out
@@ -146,7 +146,7 @@ iverilog good_mux.v tb_good_mux.v
 
 # Introduction to Yosys Open SYnthesis Suite.
 - Yosys:
-- This is a framework for RTL synthesis tools. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application   domains.Which converts a RTL design to Gate-level Netlist.<br/>
+- This is a framework for RTL synthesis tools. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various  application domains.Which converts a RTL design to Gate-level Netlist.<br/>
 - Here is a illustrative Example of How the Synthesis Maps the Gate-level-Netlist:
    <p align="center">
     <img src="Day1/Yosys/RTL_gate_level_illustrations.jpg" />
@@ -169,10 +169,6 @@ iverilog good_mux.v tb_good_mux.v
 
 ![Set_hold](https://user-images.githubusercontent.com/53760504/166146239-2581542d-a9cf-42c4-acf5-b789c7e18409.jpeg)
 
- <p align="center">
-    <img src="" />
-</p>
-
 >Hold time:
 
 <p align="center">
@@ -192,7 +188,29 @@ iverilog good_mux.v tb_good_mux.v
 ## Logic Synthesis of Mux using Yosys:
    Here is A block-Diagram Representation of How The RTL Design Is Synthesized.
    ![block_diagram](https://user-images.githubusercontent.com/53760504/166147044-8106d4a7-bc7b-4337-a1f3-6cdc213ebd64.jpg)
-
+-  To invoke Yosys:
+   ```
+    cd verilog_files
+    $ yosys
+    
+   ```
+-  Yosys Synthesis Suite:
+    
+    ![yosys](https://user-images.githubusercontent.com/53760504/166148249-cf6e2ec7-16f2-4eb0-ad09-e49aa157a413.jpg)
+-  Reading sky130 standard library :
+  ```
+   $ read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib  
+  
+  ```
+- read_liberty : It read cells from liberty file as modules into current design. The option "-lib" only create empty blackbox modules.
+- ![yosys_read](https://user-images.githubusercontent.com/53760504/166148462-81c11e2d-65c1-4782-a1fe-71d877c3b155.jpg)
+- Now Synthesize the top level module : :
+ ```$  synth -top good_mux  
+ ```
+- Mapping to the standard library
+  ```$  abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  ```
+  
 
 # Day2: Timming lib,Hierarchical vs Flat Synthesis and Efficient Flop Coding Styles 
 
@@ -202,6 +220,7 @@ iverilog good_mux.v tb_good_mux.v
  gvim Sky130_fd_scSky130_fd_sc_hd_tt_025C_1v80.lib  
  
  ```
+
 #  Nomenclature of Standard Cell Library. 
   <p align="center">
     <img src=" " />
