@@ -73,7 +73,7 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
 - The iverilog simulator dumps .vcd(value change dump) which can be viewed using gtkwave <br/>
 - Here is a Blockdiagram representation of test-bench:
   <p align="">
-    <img src="" />
+    <img src="Day1/Iverilog/Test_bench.jpg" />
 </p>
 
 
@@ -104,7 +104,7 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
       
    ```
     <p align="center">
-    <img src="" />
+    <img src="Day1/Iverilog/Sky130_Standard_Cell_lib.jpg" />
 </p>
 - Now check the Verilog files which contains the RTL and Test-Bench files 
 
@@ -114,7 +114,7 @@ On the first day of the We preformed tool set-up.And analysed the basic flow of 
       cd verilog_files
    ```
  <p align="center">
-    <img src="" />
+    <img src="Day1/Iverilog/Verilog_file.jpg" />
 </p>
 
 ##  Simulation Using iverilog. <br/>
@@ -131,7 +131,7 @@ iverilog good_mux.v tb_good_mux.v
 
 ```
  <p align="center">
-    <img src="" />
+    <img src="Day1/Iverilog/iverilog_simulation.jpg" />
 </p>
 - iii.To view the waveform for logical verification run the .vcd file with gtkwave <br/>
 
@@ -141,7 +141,7 @@ iverilog good_mux.v tb_good_mux.v
  ```
 
 <p align="center">
-    <img src="" />
+    <img src="Day1/Iverilog/gtkwave_good_mux.jpg" />
 </p>
 
 # Introduction to Yosys Open SYnthesis Suite.
