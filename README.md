@@ -185,8 +185,10 @@ iverilog good_mux.v tb_good_mux.v
 -  We Trade for Performance over higher Power,Area,Timing(In this Case).
  ![hold_time](https://user-images.githubusercontent.com/53760504/166146453-7f7e87c9-c665-4776-b57a-a0fa1b599441.jpeg)
 - Similarly to Maintain Hold-Time delays We need Cells With Relatively More Progation Delay Cells.As Propagation delay is high Narrow Width Transistor are preferred. -  We Trade for Lower Power,Area,Timing(In this Case) over Performance. 
-  That the Reason we are Having Bucket of Diffrent Standard Cells for The Same Logic.<br/>
+   That the Reason we are Having Bucket of Diffrent Standard Cells for The Same Logic.<br/>
   
+  ![flow_synth](https://user-images.githubusercontent.com/53760504/166147813-f25d7fa0-1d6f-4317-8c64-96f8f4e48f52.jpg)
+
 ## Logic Synthesis of Mux using Yosys:
    Here is A block-Diagram Representation of How The RTL Design Is Synthesized.
    ![block_diagram](https://user-images.githubusercontent.com/53760504/166147044-8106d4a7-bc7b-4337-a1f3-6cdc213ebd64.jpg)
@@ -196,14 +198,14 @@ iverilog good_mux.v tb_good_mux.v
 
 # Introduction to Timing.lib
 - The Standard cell library :
--  <p align="center">
-    <img src="" />
-</p> 
-
  ```
  gvim Sky130_fd_scSky130_fd_sc_hd_tt_025C_1v80.lib  
  
  ```
+#  Nomenclature of Standard Cell Library. 
+  <p align="center">
+    <img src=" " />
+</p> 
  
  Defaults
   <p align="center">
