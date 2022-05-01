@@ -1016,6 +1016,11 @@ assign sum[8] = int_co[7];
 endmodule
 
   ```
+  ```
+  module fa (input a , input b , input c, output co , output sum);
+	assign {co,sum}  = a + b + c ;
+endmodule
+  ```
 # Acknowledgements:
 - [Kunalghosh(Co-founder-VlSI System Design)](https://github.com/kunalg123)
 - [Shon Taware (Teaching Assistant)](https://github.com/ShonTaware)
