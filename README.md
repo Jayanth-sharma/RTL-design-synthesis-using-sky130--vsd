@@ -806,10 +806,10 @@ endmodule
      endmodule
   ```
 -   After Changes in Case:    
--  ```
-module bad_case (input i0 , input i1, input i2, input i3 , input [1:0] sel, output reg y);
-always @(*)
-begin
+    ```
+    module bad_case (input i0 , input i1, input i2, input i3 , input [1:0] sel, output reg y);
+    always @(*)
+    begin
 	case(sel)
 		2'b00: y = i0;
 		2'b01: y = i1;
@@ -817,11 +817,11 @@ begin
 		2'b11: y = i3;
 		//2'b11: y = i3;
 	endcase
-end
+     end
 
-endmodule
+    endmodule
 
--  ```
+    ```
  
 # Acknowledgements:
 - [Kunalghosh(Co-founder-VlSI System Design)](https://github.com/kunalg123)
