@@ -248,11 +248,12 @@ iverilog good_mux.v tb_good_mux.v
   <p align="center">
     <img src="https://user-images.githubusercontent.com/53760504/166149875-534f47c4-0ca4-4b10-b3b8-d78e65037d76.jpg " />
 </p> 
-- to view netlist:
-  ```
-  $ !gvim good_mux_netlist.v
-  
-  ```
+
+- To view netlist:<br/>
+    ```
+     $ !gvim good_mux_netlist.v
+    
+    ```
   - good_mux netlist:
    
  
@@ -794,22 +795,15 @@ endmodule
 
     endmodule
    //td_dff_const1
-   module dff_const1(input clk, input reset, output reg q);
-   always @(posedge clk, posedge reset)
-   begin
-	if(reset)
-		q <= 1'b0;
-	else
-		q <= 1'b1;
-   end
- 
-   endmodule
+    UPLOAD
+    
   ```
 ### Optimisation On Yosys:
 -  For optimisation:
 -  Don't  forgot to add 
    ```
    dfflibmap  ./my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib  
+   
    ```
    
 ## Seqential Logic Optimisation For Used Inputs:
