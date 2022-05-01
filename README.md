@@ -147,9 +147,19 @@ iverilog good_mux.v tb_good_mux.v
 # Introduction to Yosys Open SYnthesis Suite.
 - Yosys:
 - This is a framework for RTL synthesis tools. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application   domains.Which converts a RTL design to Gate-level Netlist.<br/>
+- Here is a illustrative Example of How the Synthesis Maps the Gate-level-Netlist:
+   <p align="center">
+    <img src="Day1/Yosys/RTL_gate_level_illustrations.jpg" />
+</p>
+### Flow of a Synthesizer:
+  <p align="center">
+    <img src="Day1/Yosys/Synth_flow_advance.jpg" />
+</p>
 ### .lib Function
 > Why Diffrent Versions of Cells?
-
+  <p align="center">
+    <img src="Day1/Yosys/Standard cells.jpg" />
+</p>
 >Setup_time:
   <p align="center">
     <img src="" />
@@ -165,7 +175,7 @@ iverilog good_mux.v tb_good_mux.v
 # Day2: Timming lib,Hierarchical vs Flat Synthesis and Efficient Flop Coding Styles 
 
 # Introduction to Timing.lib
-- The Standard cell library
+- The Standard cell library :
 -  <p align="center">
     <img src="" />
 </p> 
