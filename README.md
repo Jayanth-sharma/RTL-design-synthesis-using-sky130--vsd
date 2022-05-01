@@ -156,6 +156,7 @@ iverilog good_mux.v tb_good_mux.v
   <p align="center">
     <img src="Day1/Yosys/Synth_flow_advance.jpg" />
 </p>
+
 ###  .lib Function
 > Why Diffrent Versions of Cells?
   <p align="center">
@@ -166,13 +167,29 @@ iverilog good_mux.v tb_good_mux.v
     <img src="https://user-images.githubusercontent.com/53760504/166146134-5a2e75b4-457c-4ee0-992e-e3920824ac4e.jpg" />
 </p>
 
+![Set_hold](https://user-images.githubusercontent.com/53760504/166146239-2581542d-a9cf-42c4-acf5-b789c7e18409.jpeg)
+
+ <p align="center">
+    <img src="" />
+</p>
+
 >Hold time:
 
 <p align="center">
-    <img src="" />
+    <img src="Day1/Yosys/Hold_time.jpg" />
 </p>
+> Why Diffrent Versions of  Same Standard Cells?
+### Lets Do some Math:
+ ![Set_hold](https://user-images.githubusercontent.com/53760504/166146239-2581542d-a9cf-42c4-acf5-b789c7e18409.jpeg)
+- To maintain set-up Time In the Logic we need A Least Propagation Delay cells.As Propagation delay is least  Wide Width Transistor are preferred.<br/>
+-  We Trade for Performance over higher Power,Area,Timing(In this Case).
+ ![hold_time](https://user-images.githubusercontent.com/53760504/166146453-7f7e87c9-c665-4776-b57a-a0fa1b599441.jpeg)
+- Similarly to Maintain Hold-Time delays We need Cells With Relatively More Progation Delay Cells.As Propagation delay is high Narrow Width Transistor are preferred. -  We Trade for Lower Power,Area,Timing(In this Case) over Performance. 
+  That the Reason we are Having Bucket of Diffrent Standard Cells for The Same Logic.<br/>
+  
 ## Logic Synthesis of Mux using Yosys:
-
+   Here is A block-Diagram Representation of How The RTL Design Is Synthesized.
+   
 
 # Day2: Timming lib,Hierarchical vs Flat Synthesis and Efficient Flop Coding Styles 
 
