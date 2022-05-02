@@ -646,10 +646,10 @@ endmodule
 -  <p align="center">
     <img src="Day3/Sequentail_opt/dff_verilog_files_opt.jpg" />
 </p>
- ```
-  $ dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.v
+    ```
+     $ dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.v
  
- ```
+    ```
 - Asynchronous Reset:
   <p align="center">
     <img src="Day2/Flop coding/dff_asynres_pos.v.jpg" />
@@ -917,8 +917,9 @@ endmodule
 ### Optimisation On Yosys:
 -  For optimisation:
 -  Don't  forgot to add 
-   ```
-   dfflibmap  ./my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib  
+      ```
+        dfflibmap  ./my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib  
+	
       ```
    
    dff_const4.v
