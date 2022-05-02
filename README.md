@@ -211,23 +211,25 @@ iverilog good_mux.v tb_good_mux.v
 - read_liberty : It read cells from liberty file as modules into current design. The option "-lib" only create empty blackbox modules.
 - ![yosys_read](https://user-images.githubusercontent.com/53760504/166148462-81c11e2d-65c1-4782-a1fe-71d877c3b155.jpg)
 - Now Synthesize the top level module : 
+ 
  ```
  $  synth -top good_mux
  
  ```
-- Mapping to the standard library
+- Mapping to the standard library:<br/>
     ```
   
   $  abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
    ```
   ![map_abc_mux](https://user-images.githubusercontent.com/53760504/166149216-9f26cdac-156e-4ad5-b981-95e79d3370e3.jpg)
-  Here is the Mapping.
-- abc : This pass uses the ABC tool for technology mapping of yosys's internal gate library to a target architecture. This command converts RTL code into gates,cells   which is taken from the sky130_fd_sc_hd__tt_025C_1v80.lib file. 
-- -liberty : It generate netlists for the specified cell library (using the liberty file format).
--  Its Re-integrates The Mapping:
+  
+-  Here is the Mapping.<br/>
+-  abc : This pass uses the ABC tool for technology mapping of yosys's internal gate library to a target architecture. This command converts RTL code into gates,cells    which is taken from the sky130_fd_sc_hd__tt_025C_1v80.lib file. 
+-  -liberty : It generate netlists for the specified cell library (using the liberty file format).
+-  Its Re-integrates The Mapping: <br/>
 -  ![abc_mux](https://user-images.githubusercontent.com/53760504/166149250-03898628-d1d1-4298-82a7-dc6384202a71.jpg)
--  And Here are the Stats:
+-  And Here are the Stats:<br/>
    ![Screenshot 2022-05-01 192253](https://user-images.githubusercontent.com/53760504/166148999-e24b2e80-e1ac-4f13-b389-5513b9b883ec.jpg)
 
   
@@ -641,15 +643,14 @@ endmodule
    <p align="center">
     <img src="Day2/Flop coding/Async_set_ff.jpg" />
 </p>
-##  Synthesis of Flops:
+
+##  Synthesis of Flops:     <br/>
 -  Here are the files to synthesis:
-   <p align="center">
-    <img src="Day3/Sequentail_opt/dff_verilog_files_opt.jpg" />
- </p>
-    ```
-       $ dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.v
- 
-    ```
+   
+   ```    
+   $  dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+   
+   ```
 - Asynchronous Reset:
   <p align="center">
     <img src="Day2/Flop coding/dff_asynres_pos.v.jpg" />
@@ -881,13 +882,21 @@ endmodule
    ```
 -  With opt_clean -purge vs without:<br/>
    With Clean:<br/>
-   
+     <p align="center">
+    <img src="https://user-images.githubusercontent.com/53760504/166092021-b8880722-74ac-444b-ad00-9d7897fb9e47.jpg" />
+ </p>
     ![multiple_modules_opt_show](https://user-images.githubusercontent.com/53760504/166092021-b8880722-74ac-444b-ad00-9d7897fb9e47.jpg)
 -  Without clean:<br/>
-   ![without_opt_clean](https://user-images.githubusercontent.com/53760504/166092037-c700d3dc-e57b-4dcf-b7f0-05471266bbc9.jpg)
+   <p align="center">
+    <img src="Day3/Combi_Logic_opt/without_opt_clean.jpg" />
+ </p>
+  
+   
 - Multiple_module_opt2 hier vs Flatten:<br/>
 - Similarly Hier with Multiple_module_opt2
-  
+   <p align="center">
+    <img src="https://user-images.githubusercontent.com/53760504/166092814-be440471-4f4a-4d99-879f-c9d174098eb0.jpg" />
+  </p>
   ![Multiple_module2_opt_hier](https://user-images.githubusercontent.com/53760504/166092623-13b703c0-ea37-4151-ab9b-286ffb2a9f1e.jpg)
 - Flatten multiple_module_opt2:
     <p align="center">
@@ -965,6 +974,7 @@ end
 endmodule
 ```
 ## Seqential Logic Optimisation For Used Inputs:
+
 
 
 
