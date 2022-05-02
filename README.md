@@ -920,14 +920,16 @@ endmodule
  </p>
    
 
-## Seqential Logic Optimisation:
-## Sequential Optimisation:
-  Verilog Files for Sequential circuits assciated with D flip Flop:
+##  Seqential Logic Optimisation:
+##  Sequential Optimisation:
+-  Verilog Files for Sequential circuits assciated with D flip Flop:
   <p align="center">
     <img src="Day3/Sequentail_opt/dff_verilog_files_opt.jpg" />
  </p>
 - dff_const1.v 
+  
   ```
+  
   module dff_const1(input clk, input reset, output reg q);   
    always @(posedge clk, posedge reset) 
    begin
@@ -938,7 +940,8 @@ endmodule
     end
 
     endmodule
-    
+  
+  
   ```
   <p align="center">
     <img src="Day3/Sequentail_opt/Dff_const1_gtkwave.jpg" />
@@ -970,10 +973,12 @@ endmodule
  
 -  Don't  forgot to add after synthesis to map to standard cell.Usually sequential and combinational standard cells are in Different library.<br />
 -  why?<br /> 
+   
     ```
      dfflibmap  ./my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-	
+    
     ```
+    
 -  here is the DFF mapping:   
    <p align="center">
       <img src="Day3/Sequentail_opt/mapping_dff_const3.jpg" />
@@ -1029,18 +1034,19 @@ endmodule
  endmodule
  
 ```
-## Seqential Logic Optimisation For Used Inputs:
+
+##  Seqential Logic Optimisation For Used Inputs:
 
 
 
 
 
 
-### Experiment:
-- Now Let's assign count(q) of the counter as follows:
+###  Experiment:
+-    Now Let's assign count(q) of the counter as follows:
 
-#  Day 4:GLS,Blocking Vs Non-Blocking and Synthesis Mismatch:
-## Gate-Level-Simulation Concepts Flow Using Iverilog:
+#   Day 4:GLS,Blocking Vs Non-Blocking and Synthesis Mismatch:
+##  Gate-Level-Simulation Concepts Flow Using Iverilog:
 
    ![GLS_flowchart](https://user-images.githubusercontent.com/53760504/166114194-4eb24562-e700-465a-b244-4194b88511c6.jpg)
 
