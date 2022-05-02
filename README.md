@@ -431,6 +431,9 @@ here is a Info on A cell:
      $_OR_                           1
   
   ```
+   <p align="center">
+    <img src="Day2/Heirarchial vs Flat/multiple_hier_abc_results.jpg" />
+ </p>
   
   
   ## Netlist of Multiple Models With hierarchical synthesis :
@@ -503,12 +506,16 @@ here is a Info on A cell:
   
 
   ``` 
-  <p align="center">
+   <p align="center">
     <img src="Day2/Heirarchial vs Flat/multiple_hier_abc_results.jpg" />
-</p>
- 
+ </p>
+  
 
-### Excercise with .lib
+### Excercise with .lib:
+   <p align="center">
+    <img src="Day2/Heirarchial vs Flat/hier_synth_of_multiple_models_sc_analysis .jpg" />
+ </p>
+  
 
 
 # Flatten Synthesis:
@@ -745,7 +752,8 @@ endmodule
 - Here is the Circuit without optimisation:
   
     <p align="center">
-    <img src="" />
+    <img src="Day3/Combi_Logic_opt/opt_check_synth.jpg" />
+    
   </p>
     
       
@@ -755,11 +763,43 @@ endmodule
     opt_clean -purge
     
     ```
-  
+-  <p align="center">
+    <img src="Day3/Combi_Logic_opt/opt_check_abc.jpg" />
+    
+  </p>
+  <p align="center">
+    <img src="Day3/Combi_Logic_opt/opt_check1_synth.jpg" />
+    
+  </p>
+- opt_check2: 
+  <p align="center">
+    <img src="Day3/Combi_Logic_opt/opt_check2_abc.jpg" />
+    
+  </p>
+  <p align="center">
+    <img src="Day3/Combi_Logic_opt/opt_check1_synth.jpg" />
+    
+  </p>
+-  Opt_check3:
+   <p align="center">
+    <img src="Day3/Combi_Logic_opt/opt_check3_synth.jpg" />
+    
+  </p>
+  <p align="center">
+    <img src="Day3/Combi_Logic_opt/opt_check3_show.jpg" />
+    
+  </p>
     
 ##  Excerise:
 -  opt_check4:
-
+    <p align="center">
+    <img src="Day3/Combi_Logic_opt/opt_check4_synth.jpg" />
+    
+  </p>
+  <p align="center">
+    <img src="Day3/Combi_Logic_opt/opt_check4_show.jpg" />
+    
+  </p>
 ### Multiple_modules_opt In Hier Vs flat:
 -  UnderExcerise
    Here are the verilog_files associated with Mutliple Modules for Optimisation:
@@ -839,13 +879,13 @@ endmodule
       $_OR_                           1
 
    ```
--  With opt_clean -purge vs without:
-   With Clean:
+-  With opt_clean -purge vs without:<br/>
+   With Clean:<br/>
    
     ![multiple_modules_opt_show](https://user-images.githubusercontent.com/53760504/166092021-b8880722-74ac-444b-ad00-9d7897fb9e47.jpg)
-   Without clean:
+-  Without clean:<br/>
    ![without_opt_clean](https://user-images.githubusercontent.com/53760504/166092037-c700d3dc-e57b-4dcf-b7f0-05471266bbc9.jpg)
-- Multiple_module_opt2 hier vs Flatten:
+- Multiple_module_opt2 hier vs Flatten:<br/>
 - Similarly Hier with Multiple_module_opt2
   
   ![Multiple_module2_opt_hier](https://user-images.githubusercontent.com/53760504/166092623-13b703c0-ea37-4151-ab9b-286ffb2a9f1e.jpg)
@@ -872,8 +912,6 @@ endmodule
     end
 
     endmodule
-   //td_dff_const1
-    UPLOAD
     
   ```
 ### Optimisation On Yosys:
