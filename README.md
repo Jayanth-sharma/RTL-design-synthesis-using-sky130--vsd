@@ -641,13 +641,13 @@ endmodule
    <p align="center">
     <img src="Day2/Flop coding/Async_set_ff.jpg" />
 </p>
-## Synthesis of Flops:
-- Here are the files to synthesis:
--  <p align="center">
+##  Synthesis of Flops:
+-  Here are the files to synthesis:
+   <p align="center">
     <img src="Day3/Sequentail_opt/dff_verilog_files_opt.jpg" />
-</p>
+ </p>
     ```
-     $ dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.v
+       $ dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.v
  
     ```
 - Asynchronous Reset:
@@ -801,8 +801,8 @@ endmodule
     
   </p>
 ### Multiple_modules_opt In Hier Vs flat:
--  UnderExcerise
-   Here are the verilog_files associated with Mutliple Modules for Optimisation:
+-  UnderExcerise <br/>
+   Here are the verilog_files associated with Mutliple Modules for Optimisation: <br/>
    ![excerise_multiple_opt](https://user-images.githubusercontent.com/53760504/166091041-d8bad134-6bcf-4710-b72d-c26a4dfbe513.jpg)
     
 -  Verilog Code For Multiptle_modules_opt:
