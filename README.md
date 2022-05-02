@@ -654,10 +654,10 @@ endmodule
   <p align="center">
     <img src="Day2/Flop coding/dff_asynres_pos.v.jpg" />
 </p>
-- Synchronous Reset:
+  Synchronous Reset:
    <p align="center">
-    <img src=" Day2/Flop coding/syncres_ff.jpg" />
-</p>
+     <img src="Day2/Flop coding/syncres_ff.jpg" />
+  </p>
 
  
 ## Optimisation:
@@ -1003,7 +1003,8 @@ endmodule
     end
    endmodule
    ```
-   ```module good_mux (input i0 , input i1 , input sel , output reg y);
+   ```
+   module good_mux (input i0 , input i1 , input sel , output reg y);
       always @ (*)
       begin
 	if(sel)
@@ -1066,7 +1067,8 @@ endmodule
    endmodule
    ``` 
 - Complete Case:
-  ```module comp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
+  ```
+  module comp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
     always @ (*)
      begin
 	case(sel)
@@ -1154,6 +1156,7 @@ endmodule
 -  demux: <br/>
 -  Demux using Case. 
   ```
+  
   
   ```
   ```
