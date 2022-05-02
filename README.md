@@ -801,10 +801,12 @@ endmodule
     <img src="Day3/Combi_Logic_opt/opt_check4_show.jpg" />
     
   </p>
-### Multiple_modules_opt In Hier Vs flat:
+###  Multiple_modules_opt In Hier Vs flat:<br/>
 -  UnderExcerise <br/>
    Here are the verilog_files associated with Mutliple Modules for Optimisation: <br/>
-   ![excerise_multiple_opt](https://user-images.githubusercontent.com/53760504/166091041-d8bad134-6bcf-4710-b72d-c26a4dfbe513.jpg)
+  <p align="center">
+       <img src="Day3/Combi_Logic_opt/excerise_multiple_opt.jpg" />
+   </p>
     
 -  Verilog Code For Multiptle_modules_opt:
 - 
@@ -958,13 +960,14 @@ endmodule
      endmodule
      
    ```
-   dff_const5.v
-```
-module dff_const5(input clk, input reset, output reg q);
-reg q1;
+- dff_const5.v
+ ```
 
-always @(posedge clk, posedge reset)
-begin
+ module dff_const5(input clk, input reset, output reg q);
+ reg q1;
+
+ always @(posedge clk, posedge reset)
+ begin
 	if(reset)
 	begin
 		q <= 1'b0;
@@ -975,9 +978,10 @@ begin
 		q1 <= 1'b1;
 		q <= q1;
 	end
-end
+ end
 
-endmodule
+ endmodule
+ 
 ```
 ## Seqential Logic Optimisation For Used Inputs:
 
