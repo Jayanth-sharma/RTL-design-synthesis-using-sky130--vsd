@@ -651,6 +651,10 @@ endmodule
    $  dfflibmap -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
    
    ```
+    <p align="center">
+    <img src=" Day3/Sequentail_opt/mapping_dff_const3.jpg" />
+</p>
+   
 - Asynchronous Reset:
   <p align="center">
     <img src="Day2/Flop coding/dff_asynres_pos.v.jpg" />
@@ -742,14 +746,16 @@ endmodule
    
 # Day 3:Combinational And Synthesis Optimisation:
 ## Intro To  Optimisation:
-## Combinational  Logic Optimisation : 
+## Combinational  Logic Optimisation :
+    
  -  opt_check.v
  
     ```
     module opt_check (input a , input b , output y);
 	assign y = a?b:0;
     endmodule 
-      ```
+     
+     ```
 - Here is the Circuit without optimisation:
   
     <p align="center">
@@ -915,7 +921,11 @@ endmodule
    
 
 ## Seqential Logic Optimisation:
-## Sequential Optimisation
+## Sequential Optimisation:
+  Verilog Files for Sequential circuits assciated with D flip Flop:
+  <p align="center">
+    <img src="Day3/Sequentail_opt/dff_verilog_files_opt.jpg" />
+ </p>
 - dff_const1.v 
   ```
   module dff_const1(input clk, input reset, output reg q);   
@@ -930,15 +940,49 @@ endmodule
     endmodule
     
   ```
-### Optimisation On Yosys:
--  For optimisation:
--  Don't  forgot to add 
-      ```
-        dfflibmap  ./my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib  
+  <p align="center">
+    <img src="Day3/Sequentail_opt/Dff_const1_gtkwave.jpg" />
+ </p>
+- It clearly Show the design follows a Clock.
+- So there is the synthesis Result expected as expected:
+  <p align="center">
+    <img src="Day3/Sequentail_opt/Dff_cont1_synth.jpg" />
+ </p>
+ <p align="center">
+    <img src="Day3/Sequentail_opt/dff_const1_show.jpg" />
+ </p>
+ Dff_const2.v
+ <p align="center">
+    <img src="Day3/Sequentail_opt/dff_const2.jpg" />
+ </p>
+ 
+ <p align="center">
+    <img src="Day3/Sequentail_opt/Dff_synth_cont2.jpg" />
+ </p>
+ 
+ dff_cont3.v:
+ <p align="center">
+    <img src="Day3/Sequentail_opt/gtkwave_dff_const3.v.jpg" />
+ </p>
+ <p align="center">
+    <img src="Day3/Sequentail_opt/gtkwave_dff_const3.v.jpg" />
+ </p>
+ 
+-  Don't  forgot to add after synthesis to map to standard cell.Usually sequential and combinational standard cells are in Different library.<br />
+-  why?<br /> 
+    ```
+     dfflibmap  ./my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 	
-      ```
-   
+    ```
+-  here is the DFF mapping:   
+   <p align="center">
+      <img src="Day3/Sequentail_opt/mapping_dff_const3.jpg" />
+  </p>
+     
+-  Excerices:
+- Here are the 
    dff_const4.v
+   
    ```
    module dff_const4(input clk, input reset, output reg q);
     reg q1;
@@ -960,7 +1004,9 @@ endmodule
      endmodule
      
    ```
+   
 - dff_const5.v
+ 
  ```
 
  module dff_const5(input clk, input reset, output reg q);
