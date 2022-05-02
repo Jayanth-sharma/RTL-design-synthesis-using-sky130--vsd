@@ -1158,6 +1158,7 @@ endmodule
     module ternary_operator_mux (input i0 , input i1 , input sel , output y);
 	assign y = sel?i1:i0;
 	endmodule
+	
    ```
  - Before Synthesis of The Mux:<br />
    <p align="center">
@@ -1171,18 +1172,19 @@ endmodule
    </p>
   
     
-      ```
-      module bad_mux (input i0 , input i1 , input sel , output reg y);
-      always @ (sel)
-       begin
-       if(sel)
+        ```
+      
+        module bad_mux (input i0 , input i1 , input sel , output reg y);
+        always @ (sel)
+        begin
+        if(sel)
 		y <= i1;
 	  else 
 	  	y <= i0;
         end
          endmodule
    
-      ```
+       ```
    <p align="center">
       <img src="Day4/GLS_sim_missmatch/gtk_bad_mux.jpg" />
    </p>
@@ -1191,10 +1193,10 @@ endmodule
    </p>
    
    
-    ```
+     ```
     
-    module good_mux (input i0 , input i1 , input sel , output reg y);
-      always @ (*)
+     module good_mux (input i0 , input i1 , input sel , output reg y);
+     always @ (*)
       begin
 	if(sel)
 		y <= i1;
@@ -1251,6 +1253,17 @@ endmodule
     endmodule
     
     ```
+   <p align="center">
+      <img src="Day5/Incmplete_if/incomp_if_gtk.jpg" />
+   </p>
+     <p align="center">
+      <img src="Day5/Incmplete_if/infered_latch_synth_incomp_if.jpg" />
+   </p>
+     <p align="center">
+      <img src="Day5/Incmplete_if/show_synthe_incompif.jpg" />
+   </p>
+   
+    
  - InComplete if2:   
    
     ```
@@ -1264,20 +1277,44 @@ endmodule
 
       end
        endmodule
+       
      ```
--  Incomplete Case :
-   ```
+   <p align="center">
+      <img src="Day5/Incmplete_if/incomp_if2_gktwave.jpg" />
+   </p>
+    <p align="center">
+      <img src="Day5/Incmplete_if/Infered_latch_synth_incomp_if2.jpg" />
+   </p>
+    <p align="center">
+      <img src="Day5/Incmplete_if/incomp_if2_synthe.jpg" />
+   </p>
    
-   module incomp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
-   always @ (*)
-   begin
+   
+-  Incomplete Case :
+    ```
+   
+    module incomp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
+    always @ (*)
+    begin
 	case(sel)
 		2'b00 : y = i0;
 		2'b01 : y = i1;
 	endcase
-   end
-   endmodule
-   ``` 
+    end
+    endmodule
+    
+    ```
+     <p align="center">
+      <img src="Day5/case overlapping/incomp_case_gtkwave.jpg" />
+   </p>
+    <p align="center">
+      <img src="Day5/case overlapping/Incomp_case_synth_info.jpg" />
+   </p>
+    <p align="center">
+      <img src="Day5/case overlapping/incomp_case_Synth_show.jpg" />
+   </p>
+   
+   
 - Complete Case:
   ```
   module comp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
@@ -1292,6 +1329,15 @@ endmodule
      endmodule
   
   ```
+     <p align="center">
+      <img src="Day5/case overlapping/comp_case_gtkwave.jpg" />
+   </p>
+    <p align="center">
+      <img src="Day5/case overlapping/Info_comp_case.jpg" />
+   </p>
+    <p align="center">
+        <img src="Day5/case overlapping/comp_case_synthe.jpg" />
+   </p>
 -  Partial latch Assignments:<br/>
 
         ```
@@ -1313,11 +1359,19 @@ endmodule
           endmodule
 	 
        ```
+     <p align="center">
+      <img src="Day5/case overlapping/info_synth_bad_edit.jpg" />
+   </p>
+    <p align="center">
+      <img src="Day5/case overlapping/partial_case_synth_show.jpg" />
+   </p>
+  
+					 
 - Bad Case:
   
-  ```
-    module bad_case (input i0 , input i1, input i2, input i3 , input [1:0] sel, output reg y);
-    always @(*)
+   ```
+   module bad_case (input i0 , input i1, input i2, input i3 , input [1:0] sel, output reg y);
+   always @(*)
     begin
 	case(sel)
 		2'b00: y = i0;
@@ -1329,7 +1383,19 @@ endmodule
        end
 
      endmodule
-  ```
+     
+    ```
+    <p align="center">
+      <img src="Day5/case overlapping/bad_case_gtkwave.jpg" />
+   </p>
+    <p align="center">
+      <img src="Day5/case overlapping/bad_case_synthesis_info.jpg" />
+   </p>
+    <p align="center">
+      <img src="Day5/case overlapping/bad_case_synthesis.jpg" />
+   </p>
+    
+  
 -   After Changes in Case:    
     ```
     module bad_case (input i0 , input i1, input i2, input i3 , input [1:0] sel, output reg y);
@@ -1347,6 +1413,17 @@ endmodule
     endmodule
 
     ```
+    <p align="center">
+      <img src="Day5/case overlapping/gtkwave_bad_case_edit.jpg" />
+   </p>
+   
+   <p align="center">
+      <img src="Day5/case overlapping/info_synth_bad_edit.jpg" />
+   </p>
+   <p align="center">
+      <img src="Day5/case overlapping/synth_show_bad_edit.jpg" />
+   </p>
+   
     
 ## For and Generate
 - mux generate:  
@@ -1365,6 +1442,20 @@ endmodule
   endmodule
 
    ```
+    <p align="center">
+      <img src="Day5/for and generate contructs/mux_generate_gtkwave.jpg" />
+   </p>
+   
+   <p align="center">
+      <img src="Day5/for and generate contructs/mux_generate_synth_info.jpg" />
+   </p>
+    <p align="center">
+      <img src="Day5/for and generate contructs/Synthe_mux_4_.jpg" />
+   </p>
+     <p align="center">
+      <img src="" />
+   </p>
+   
 -  demux: <br/>
 -  Demux using Case. 
   ```
