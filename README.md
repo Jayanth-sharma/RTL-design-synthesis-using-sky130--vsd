@@ -1009,7 +1009,10 @@ endmodule
      endmodule
      
    ```
-   
+   ![dff_const4_synthe](https://user-images.githubusercontent.com/53760504/166252494-b06c30cf-4f9a-4e6f-b7de-42dbf6827054.jpg)
+
+   ![synth_dff_const4_show](https://user-images.githubusercontent.com/53760504/166252515-1d0d74ce-4549-496a-9e30-aab86fd542ca.jpg)
+
 - dff_const5.v
  
  ```
@@ -1034,18 +1037,109 @@ endmodule
  endmodule
  
 ```
+![df_const5_synth_info](https://user-images.githubusercontent.com/53760504/166252685-beff67df-6629-4d58-8c49-8c25a315dab5.jpg)
+- We will Also verify this circuit under Blocking and No-Blocking Assignments:
 
+ 
 ##  Seqential Logic Optimisation For Used Inputs:
 
+- To See unused Cells in A module :
+- Counter with Zero Reset Case:
+  ```
+  
+  module counter_opt (input clk , input reset , output q);
+   reg [2:0] count;
+   assign q = count[0];
+
+   always @(posedge clk ,posedge reset)
+   begin
+	if(reset)
+		count <= 3'b000;
+	else
+		count <= count + 1;
+   end
+
+  endmodule
+
+  ```
+ 
+   ![count_opt_gtkwave](https://user-images.githubusercontent.com/53760504/166255497-821ad105-8890-4a2f-aece-54fb7f322410.jpg)
+- And Synthesis using 
+  ```
+  opt_clean -purgre
+  
+  ```
+   <p align="center">
+      <img src="Day3/Sequential_unused/synth_counter_opt.jpg" />
+  </p>
+- And Here is the Netlist view:
+  <p align="center">
+      <img src="Day3/Sequential_unused/counter_opt_Show_.jpg" />
+  </p>
+###   Experiment: <br />
+- Now Let's assign count(q) of the counter as follows:<br />
+- Similarly As a Excerices:<br />
+- We Modified If the reset to to  Count(5) and count(6):<br />
+- Here are the following Codes for Mod-5 Counter :<br />
+ 
+ ```
+ 
+ module counter_opt (input clk , input reset , output q);
+   reg [2:0] count;
+   assign q =(count[0]==3'b101);
+
+   always @(posedge clk ,posedge reset)
+   begin
+	if(reset)
+		count <= 3'b000;
+	else
+		count <= count + 1;
+   end
+
+  endmodule
+  
+ ```
+
+   <p align="center">
+      <img src="Day3/Sequential_unused/Counter5_synth.jpg" />
+  </p>
+  After optimisation and Add libraries:
+   <p align="center">
+      <img src="Day3/Sequential_unused/counter5_abc.jpg" />
+  </p>
+  <p align="center">
+      <img src="Day3/Sequential_unused/synth_counter5_show.jpg" />
+  </p>
+- Here are the following Codes for Mod-6 Counter :<br />
+ 
+ ```
+ 
+ module counter_opt (input clk , input reset , output q);
+   reg [2:0] count;
+   assign q =(count[0]==3'b110);
+
+   always @(posedge clk ,posedge reset)
+   begin
+	if(reset)
+		count <= 3'b000;
+	else
+		count <= count + 1;
+   end
+
+  endmodule
+  
+ ```
+  
+  <p align="center">
+      <img src="Day3/Sequential_unused/counter6_opt.jpg" />
+  </p>
+  <p align="center">
+      <img src="Day3/Sequential_unused/counter_opt6.jpg" />
+      <img src="Day3/Sequential_unused/Counter6_opt_zoom.jpg" />
+  </p>
 
 
-
-
-
-###  Experiment:
--    Now Let's assign count(q) of the counter as follows:
-
-#   Day 4:GLS,Blocking Vs Non-Blocking and Synthesis Mismatch:
+#  Day 4:GLS,Blocking Vs Non-Blocking and Synthesis Mismatch:
 ##  Gate-Level-Simulation Concepts Flow Using Iverilog:
 
    ![GLS_flowchart](https://user-images.githubusercontent.com/53760504/166114194-4eb24562-e700-465a-b244-4194b88511c6.jpg)
@@ -1128,6 +1222,7 @@ endmodule
      ```
 -  Incomplete Case :
    ```
+   
    module incomp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
    always @ (*)
    begin
@@ -1228,7 +1323,26 @@ endmodule
 -  demux: <br/>
 -  Demux using Case. 
   ```
-  
+  module demux_case (output o0 , output o1, output o2 , output o3, output o4, output o5, output o6 , output o7 , input [2:0] sel  , input i);
+  reg [7:0]y_int;
+  assign {o7,o6,o5,o4,o3,o2,o1,o0} = y_int;
+  integer k;
+  always @ (*)
+  begin
+  y_int = 8'b0;
+	case(sel)
+		3'b000 : y_int[0] = i;
+		3'b001 : y_int[1] = i;
+		3'b010 : y_int[2] = i;
+		3'b011 : y_int[3] = i;
+		3'b100 : y_int[4] = i;
+		3'b101 : y_int[5] = i;
+		3'b110 : y_int[6] = i;
+		3'b111 : y_int[7] = i;
+	endcase
+
+   end
+  endmodule
   
   ```
   ```
