@@ -882,10 +882,15 @@ endmodule
    ```
 -  With opt_clean -purge vs without:<br/>
    With Clean:<br/>
+     
+     <p align="center">
+    <img src="Day3/Combi_Logic_opt/opt_clean multiple_module_opt.jpg" />
+ </p>
+    
      <p align="center">
     <img src="https://user-images.githubusercontent.com/53760504/166092021-b8880722-74ac-444b-ad00-9d7897fb9e47.jpg" />
  </p>
-    ![multiple_modules_opt_show](https://user-images.githubusercontent.com/53760504/166092021-b8880722-74ac-444b-ad00-9d7897fb9e47.jpg)
+    
 -  Without clean:<br/>
    <p align="center">
     <img src="Day3/Combi_Logic_opt/without_opt_clean.jpg" />
@@ -893,9 +898,9 @@ endmodule
   
    
 - Multiple_module_opt2 hier vs Flatten:<br/>
-- Similarly Hier with Multiple_module_opt2
+- Similarly Hier with Multiple_module_opt2 :<br/>
    <p align="center">
-    <img src="https://user-images.githubusercontent.com/53760504/166092814-be440471-4f4a-4d99-879f-c9d174098eb0.jpg" />
+    <img src="https://user-images.githubusercontent.com/53760504/166092623-13b703c0-ea37-4151-ab9b-286ffb2a9f1e.jpg" />
   </p>
   ![Multiple_module2_opt_hier](https://user-images.githubusercontent.com/53760504/166092623-13b703c0-ea37-4151-ab9b-286ffb2a9f1e.jpg)
 - Flatten multiple_module_opt2:
