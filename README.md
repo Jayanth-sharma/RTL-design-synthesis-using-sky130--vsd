@@ -979,10 +979,11 @@ endmodule
     
     ```
     
--  here is the DFF mapping:   
-   <p align="center">
+-  Here is the DFF mapping:<br />   
+    <p align="center">
       <img src="Day3/Sequentail_opt/mapping_dff_const3.jpg" />
-  </p>
+    
+</p>
      
 -  Excerices:
 - Here are the 
@@ -1158,19 +1159,41 @@ endmodule
 	assign y = sel?i1:i0;
 	endmodule
    ```
-   ```
-   module bad_mux (input i0 , input i1 , input sel , output reg y);
-   always @ (sel)
-   begin
-	if(sel)
+ - Before Synthesis of The Mux:<br />
+   <p align="center">
+      <img src="Day4/GLS_sim_missmatch/gtk_ternary.jpg" />
+      <img src="Day4/GLS_sim_missmatch/yosys_ternary_mux.jpg" />
+  </p>
+- GLS Simulation Command after Synthesis :
+ 
+   <p align="center">
+      <img src="Day4/GLS_sim_missmatch/gtk_GLS_ternary.jpg" />
+   </p>
+  
+    
+      ```
+      module bad_mux (input i0 , input i1 , input sel , output reg y);
+      always @ (sel)
+       begin
+       if(sel)
 		y <= i1;
-	else 
-		y <= i0;
-    end
-   endmodule
-   ```
-   ```
-   module good_mux (input i0 , input i1 , input sel , output reg y);
+	  else 
+	  	y <= i0;
+        end
+         endmodule
+   
+      ```
+   <p align="center">
+      <img src="Day4/GLS_sim_missmatch/gtk_bad_mux.jpg" />
+   </p>
+   <p align="center">
+      <img src="Day4/GLS_sim_missmatch/synt_mux_detect.jpg" />
+   </p>
+   
+   
+    ```
+    
+    module good_mux (input i0 , input i1 , input sel , output reg y);
       always @ (*)
       begin
 	if(sel)
@@ -1179,11 +1202,15 @@ endmodule
 		y <= i0;
         end
       endmodule
-   ```
-  
+      
+    ```
+  <p align="center">
+      <img src="Day4/GLS_sim_missmatch/gtkwave_bad_mux.jpg" />
+   </p>
  
 
 ## Blocking And Non-Blocking Statements:
+  
   ```
    module blocking_caveat (input a , input b , input  c, output reg d); 
    reg x;     
@@ -1195,9 +1222,26 @@ endmodule
    endmodule
 
  ```
+  <p align="center">
+           <img src="Day4/GLS_sim_missmatch/Gtk_blocking.jpg" />
+    </p>
+   <p align="center">
+      <img src="Day4/BLOCKING/blocking_synth.jpg" />
+   </p>
+   <p align="center">
+      <img src="Day4/BLOCKING/show_blocking.jpg" />
+   </p>
+   
+   <p align="center">
+      <img src="Day4/BLOCKING/blocking_GLS_gtk.jpg" />
+   </p>
+   
+   
+ 
  # Day 5: If,Case,For loop and For Generate:
  ## Incomplete IF:
-    ```
+    ``` 
+    
     module incomp_if (input i0 , input i1 , input i2 , output reg y);
     always @ (*)  
     begin
@@ -1205,6 +1249,7 @@ endmodule
 		y <= i1;
     end   
     endmodule
+    
     ```
  - InComplete if2:   
    
