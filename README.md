@@ -1452,9 +1452,7 @@ endmodule
     <p align="center">
       <img src="Day5/for and generate contructs/Synthe_mux_4_.jpg" />
    </p>
-     <p align="center">
-      <img src="" />
-   </p>
+     
    
 -  demux: <br/>
 -  Demux using Case. 
@@ -1481,6 +1479,18 @@ endmodule
   endmodule
   
   ```
+  
+<p align="center">
+      <img src="Day5/for and generate contructs/demux_case_gtk.jpg" />
+</p>
+   
+ <p align="center">
+      <img src="Day5/for and generate contructs/demux_generate_synth_info.jpg" />
+ </p>
+ <p align="center">
+      <img src="Day5/for and generate contructs/demux_generate_netlist.jpg" />
+</p>
+   
   ```
   module demux_generate (output o0 , output o1, output o2 , output o3, output o4, output o5, output o6 , output o7 , input [2:0] sel  , input i);
 reg [7:0]y_int;
@@ -1659,6 +1669,20 @@ endmodule
 	assign {co,sum}  = a + b + c ;
    endmodule
   ```
+</p>
+     <p align="center">
+      <img src="Day5/for and generate contructs/ripple_carry_adder_gtk.jpg" />
+</p>
+   
+<p align="center">
+      <img src="Day5/for and generate contructs/ripple_carry_adder_synth.jpg" />
+</p>
+<p align="center">
+      <img src="Day5/for and generate contructs/synth_fa.jpg" />
+</p>
+<p align="center">
+      <img src="Day5/for and generate contructs/fa_syntheis.jpg" />
+</p>
 # Acknowledgements:
 - [Kunalghosh(Co-founder-VLSI System Design)](https://github.com/kunalg123)
 - [Shon Taware (Teaching Assistant)](https://github.com/ShonTaware)
