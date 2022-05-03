@@ -245,7 +245,7 @@ iverilog good_mux.v tb_good_mux.v
   
   ```
 - Write verilog: 
-- Syntax:When the command "write_verilog -rename_top <new_entity_name> <HDL_netlist>.v" is used, the Verilog file created does not rename the entity/module.
+- Syntax:When the command `"write_verilog -rename_top <new_entity_name> <HDL_netlist>.v"` is used, the Verilog file created does not rename the entity/module.
 - -noattr-  By using this option no attributes are included in the output. good_mux_netlist.v : File name to which we want to write the netlist.
   <p align="center">
     <img src="https://user-images.githubusercontent.com/53760504/166149875-534f47c4-0ca4-4b10-b3b8-d78e65037d76.jpg " />
