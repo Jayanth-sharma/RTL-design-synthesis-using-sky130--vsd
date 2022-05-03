@@ -1683,9 +1683,10 @@ endmodule
 <p align="center">
       <img src="Day5/for and generate contructs/fa_syntheis.jpg" />
 </p>
-# Acknowledgements:
-- [Kunalghosh(Co-founder-VLSI System Design)](https://github.com/kunalg123)
-- [Shon Taware (Teaching Assistant)](https://github.com/ShonTaware)
+
+#  Acknowledgements:<br />
+- [Kunalghosh(Co-founder-VLSI System Design)](https://github.com/kunalg123)<br />
+- [Shon Taware (Teaching Assistant)](https://github.com/ShonTaware)<br />
  
 
 
