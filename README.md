@@ -1685,7 +1685,7 @@ endmodule
 </p>
 
 #  Acknowledgements:<br />
-- [Kunalghosh(Co-founder-VLSI System Design)](https://github.com/kunalg123)<br />
+- [Kunalghosh(Co-founder-VLSI System Design)](https://github.com/kunalg123) <br />
 - [Shon Taware (Teaching Assistant)](https://github.com/ShonTaware)<br />
  
 
