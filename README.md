@@ -807,9 +807,10 @@ endmodule
     <img src="Day3/Combi_Logic_opt/opt_check4_show.jpg" />
     
   </p>
+
 ###  Multiple_modules_opt In Hier Vs flat:<br/>
--  UnderExcerise <br/>
-   Here are the verilog_files associated with Mutliple Modules for Optimisation: <br/>
+-   UnderExcerise <br/>
+-   Here are the verilog_files associated with Mutliple Modules for Optimisation: <br/>
   <p align="center">
        <img src="Day3/Combi_Logic_opt/excerise_multiple_opt.jpg" />
    </p>
@@ -1038,8 +1039,8 @@ endmodule
  endmodule
  
 ```
-![df_const5_synth_info](https://user-images.githubusercontent.com/53760504/166252685-beff67df-6629-4d58-8c49-8c25a315dab5.jpg)
-- We will Also verify this circuit under Blocking and No-Blocking Assignments:
+   ![df_const5_synth_info](https://user-images.githubusercontent.com/53760504/166252685-beff67df-6629-4d58-8c49-8c25a315dab5.jpg)
+-  We will Also verify this circuit under Blocking and Non-Blocking Assignments:
 
  
 ##  Seqential Logic Optimisation For Used Inputs:
