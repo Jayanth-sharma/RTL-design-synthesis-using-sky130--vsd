@@ -204,24 +204,20 @@ iverilog good_mux.v tb_good_mux.v
     
     ![yosys](https://user-images.githubusercontent.com/53760504/166148249-cf6e2ec7-16f2-4eb0-ad09-e49aa157a413.jpg)
 -  Reading sky130 standard library :
-  ```
-   $ read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib  
   
-  ```
+  ` $ read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib `
+  
 - read_liberty : It read cells from liberty file as modules into current design. The option "-lib" only create empty blackbox modules.
 - ![yosys_read](https://user-images.githubusercontent.com/53760504/166148462-81c11e2d-65c1-4782-a1fe-71d877c3b155.jpg)
 - Now Synthesize the top level module : 
  
- ```
- $  synth -top good_mux
- 
- ```
+ ` $  synth -top good_mux `
 - Mapping to the standard library:<br/>
-    ```
+    
   
-  $  abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  `$  abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
 
-   ```
+   
   ![map_abc_mux](https://user-images.githubusercontent.com/53760504/166149216-9f26cdac-156e-4ad5-b981-95e79d3370e3.jpg)
   
 -  Here is the Mapping.<br/>
@@ -234,16 +230,15 @@ iverilog good_mux.v tb_good_mux.v
 
   
 - To view the result as a grapviz use below command 
-  ```
-  $ show
   
-  ```
+  ` $ show      `
+  
+  
   ![mux_show](https://user-images.githubusercontent.com/53760504/166149041-8147ef36-c340-44f2-be29-e72ae541c6d3.jpg)
 - Write the netlist to a file :
-  ```
-  $ write_verilog -noattr good_mux_netlist.v
   
-  ```
+  ` $ write_verilog -noattr good_mux_netlist.v     `
+
 - Write verilog: 
 - Syntax:When the command `"write_verilog -rename_top <new_entity_name> <HDL_netlist>.v"` is used, the Verilog file created does not rename the entity/module.
 - -noattr-  By using this option no attributes are included in the output. good_mux_netlist.v : File name to which we want to write the netlist.
@@ -304,11 +299,8 @@ iverilog good_mux.v tb_good_mux.v
 - The Library files We are Using Here are Sky130 Process Node:
 - About Sky130 Process Node:The SKY130 is a mature 180nm-130nm hybrid technology originally developed internally by Cypress Semiconductor before being spun out into     SkyWater Technology and made accessible to general industry.  
  
-    ```
-    
-    $  gvim Sky130_fd_scSky130_fd_sc_hd_tt_025C_1v80.lib  
- 
-   ```
+  ` $  gvim Sky130_fd_scSky130_fd_sc_hd_tt_025C_1v80.lib  `
+  
 
  
 
@@ -329,7 +321,6 @@ iverilog good_mux.v tb_good_mux.v
 - To search individual  Standard cells in library use the following Commands.
 
 ```
-
 :syn off     //to turn off the syntax
 :se nu     //To show numbers
 :/cell     //search for "cell"
